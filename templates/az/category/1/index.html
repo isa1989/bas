@@ -1,0 +1,452 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_MasterHead"><link rel="shortcut icon" href="../../../favicon.ico" />
+<meta charset="utf-8" /><link rel="shortcut icon" href="../../../img/logo.png" /><meta name="author" content="Nasir@MHM" /><meta name="robots" content="index, follow" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="stylesheet" href="../../../css/bootstrap.min.css" /><link rel="stylesheet" href="../../../css/icomoon-social.css" /><link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800" rel="stylesheet" type="text/css" />
+
+    
+    <!--START CSS--> 
+    <link rel="stylesheet" href="../../../css/leaflet.css" /><link rel="stylesheet" href="../../../css/main.css" />
+    
+
+    <!--[if lt IE 9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+    <![endif]-->  
+    
+<meta name="description" content="" /><meta name="keywords" content="" /><title>
+	ZUVAND
+</title></head>
+
+
+<body>
+
+<div class="all-site">
+
+<div id="fb-root"></div>
+
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=644924598860420";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<script>!function (d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id))
+    { js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); }
+}
+(document, "script", "twitter-wjs");
+</script>
+
+
+<form name="aspnetForm" method="post" action="index.html" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE3MzE5Njc4MDEPZBYCZg9kFgICAw9kFiQCBg8WAh4EVGV4dAWtATx1bCBjbGFzcz0ibGFuZyI+PGxpPjxhIGNsYXNzPSJhY3RpdmUiIGhyZWY9Ii9hei9jYXRlZ29yeS8xLyI+YXo8L2E+PC9saT48bGk+PGEgY2xhc3M9IiIgaHJlZj0iL3J1L2NhdGVnb3J5LzEvIj5ydTwvYT48L2xpPjxsaT48YSBjbGFzcz0iIiBocmVmPSIvZW4vY2F0ZWdvcnkvMS8iPmVuPC9hPjwvbGk+ZAIHD2QWCmYPZBYCAgEPFgIeC18hSXRlbUNvdW50AgYWDGYPZBYCZg8VAiQyMGQxMzdiMTI0YjU0ZGU1OTFjYTZhZDlkYTZiODVjNS5wbmcOU09DT01FQyAgc2xpZGVkAgEPZBYCZg8VAiQzMmI3NzVhYTNlOWE0ODJiYTU2MDRhMmM1MWJhMmY5NC5qcGcITUFLRUxTQU5kAgIPZBYCZg8VAiRmZTkyYTk1ZGZjNzM0ZWQ4YjBiMmIwYmUxOTgxNmQyZC5qcGcEQVhJU2QCAw9kFgJmDxUCJDRhNzAzY2E3OGI3NDQ4ZTBhZWYwNzQ3ZDhmYmI4NTk1LmpwZwVGTFVLRWQCBA9kFgJmDxUCJGI0ZWVjYzc3MGQ1ZDRlNmQ5Y2Y2YmQ1M2RkYTc5Y2NjLmpwZw9QVEwgU09MQVIgU3l0ZW1kAgUPZBYCZg8VAiQ1M2YwYTc4ZmYyODI0NWM2OWEzYmI3YTYwMWViNjQ2YS5qcGcITUFLRUxTQU5kAgEPFgIfAQIFFgpmD2QWAmYPFQIBMQdTT0NPTUVDZAIBD2QWAmYPFQIBMghNQUtFTFNBTmQCAg9kFgJmDxUCATMEQVhJU2QCAw9kFgJmDxUCATQFRkxVS0VkAgQPZBYCZg8VAgE1CVBUTCBTT0xBUmQCAw8WAh8BZmQCBQ8WAh8BAgYWDGYPZBYGZg8VBAExOnJlc2hlbmEtcWxhdm5heWEtcHJvYmxlbWEtYWtrdW11bHlhdG9yb3Ytbm92b3FvLXBva29sZW5peWEkZjYzZTcwYWZmYjczNGI2MmE0MzQ1MzMwYTMwMjc4MTEuanBnZ9Cg0LXRiNC10L3QsCDQs9C70LDQstC90LDRjyDQv9GA0L7QsdC70LXQvNCwINCw0LrQutGD0LzRg9C7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LW1vc2huaXkta3ZhbnRvdml5LWtvbXB5dXRlcnRELVdhdmUgU3lzdGVtcyDRgdC+0LHQuNGA0LDQtdGC0YHRjyDQstGL0L/Rg9GB0YLQuNGC0Ywg0L3QvtCy0YvQuSDQvNC+0YnQvdGL0Lkg0LrQstCw0L3RgtC+0LLRi9C5INC60L7QvNC/0YzRjtGC0LXRgGQCAg8VBAE2RWQtd2F2ZS1zeXN0ZW1zLXNvYmlyYWV0c3lhLXZpcHVzdGl0LW5vdml5LW1vc2huaXkta3ZhbnRvdml5LWtvbXB5dXRlco4B0JrQvtC80L/QsNC90LjRjyBELVdhdmUgU3lzdGVtcyDQt9Cw0L/Qu9Cw0L3QuNGA0L7QstCw0LvQsCDQstGL0L/Rg9GB0Log0LzQvtGJ0L3QvtCz0L4g0L3QvtCy0L7Qs9C+INC60LLQsNC90YLQvtCy0L7Qs9C+INC60L7QvNC/0YzRjtGC0LXRgNCwLgoyMDE2LTEwLTEyZAIHDxYCHwECBxYOZg9kFgJmDxUEATEMbWFrZWxzYW4tdXBzJGM0N2NmYTUxNTY3ODQ3YTE4MTFjMjQ2MTA2ZGVhOWUzLnBuZw5NQUtFTFNBTiAgIFVQU2QCAQ9kFgJmDxUEATILc29jb21lYy11cHMkNThlZDQ0Y2ZlZDllNDJiN2JmMDBhYTIyZmJlYzI3NDcucG5nC1NPQ09NRUMgVVBTZAICD2QWAmYPFQQBMwZwaWxsZXIkNTc3OTA4ODIyODYxNGY3Yzg5OTFmOGRmZTBkODZlYmMucG5nB1DEsExMRVJkAgMPZBYCZg8VBAE0BGF4aXMkNzJiODRhYTkzMTliNDI0OGFiNzcxODJiNjc0NTM1ZWUucG5nBUFYxLBTZAIED2QWAmYPFQQBNQVmbHVrZSRhYjhmNTRhMWZjOTk0MThhOWYyMjhlMmM4NDVhMDJjNC5qcGcFRkxVS0VkAgUPZBYCZg8VBAE2CXB0bC1zb2xhciRkYWNjZjczMmExNjU0MzUyYWI5NTUzNTgxMWYyNGM3NC5wbmcJUFRMIFNPTEFSZAIGD2QWAmYPFQQBNwZpbmZvcm0kNGM1NzcyZWUzZWRhNGZmOGFjZWZhODBhYTViNTIxMjIuanBnBmluZm9ybWQCDQ8WAh8ABQfGj2xhccmZZAIODxYCHwAFBsOcbnZhbmQCDw8WAh8ABTZCYWvEsSDFn8mZaMmZcmksIE5vYmVsIHByb3NwZWt0aSAtIDIzLCA3LWNpIG3JmXJ0yZliyZlkAhAPFgIfAAUHVGVsZWZvbmQCEQ8WAh8ABRErOTk0IDUwIDIyMCA4MCA2MWQCEg8WAh8ABQZlLW1haWxkAhMPFgIfAAVJenV2YW5kQG1haWwucnUNCiAgc2VydmljZS56dXZhbmRAZ21haWwuY29tDQogICAgICAgICAgICAgICBpbmZvQHp1dmFuZC5hemQCFA8WAh8ABRBCaXpkyZluIHNvcnXFn3VuZAIVDxYCHwAFC8SwxZ8gdmF4dMSxZAIWDxYCHwAFESs5OTQgMTIgNTk4IDg1IDE3ZAIXDxYCHwAFFMSwxZ8gdmF4dMSxIHNvbnJhc8SxZAIYDxYCHwAFESs5OTQgNTAgMjIwIDgwIDYxZAIZDxYCHwAFESs5OTQgNTAgNTY5IDUxIDg4ZAIaDxYCHwAFESs5OTQgNTAgNzQ0IDc0IDE0ZAIbDxYCHwAFCnp1dmFuZC5jb21kAhwPFgIfAAUbQsO8dMO8biBow7xxdXFsYXLEsSBxb3J1bnVyZGRD2h7yOXWWDLXpKxBEmoOtsEBfmOy/WxTzjS94NzZDNw==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        
+
+        <!-- Navigation & Logo-->
+        <div class="mainmenu-wrapper">
+	        <div class="container">
+
+		        <nav id="mainmenu" class="mainmenu">
+					<ul>
+						<li class="logo-wrapper"><a href="../../../index.html"><img src="../../../Pics/logo.png" alt="Zuvand"></a></li>                                               
+
+						<li id="mhome"><a href="../../../index.html"> ƏSAS SƏHİFƏ </a></li>
+						<li id="mproducts"><a href="../../product/list/index.html">MƏHSULLAR  </a></li>
+						<li id="mservices"><a href="../../pages/2/services.html"> XİDMƏTLƏR </a></li>
+						<li id="mdownloads"><a href="../../downloads/1/index.html">YÜKLƏNMƏLƏR </a></li>
+                        <li id="mabout"><a href="../../pages/1/about.html">HAQQIMIZDA </a></li>
+                        <li id="mcontact"><a href="../../contact/index.html">ƏLAQƏ </a></li>
+
+					</ul>
+				</nav>
+
+                
+                <ul class="lang"><li><a class="active" href="index.html">az</a></li><li><a class="" href="../../../ru/category/1/index.html">ru</a></li><li><a class="" href="../../../en/category/1/index.html">en</a></li>
+                 
+
+			</div>
+		</div>
+        
+        
+        
+        <script>    window.onload = function () {  $('#mhome').addClass('active');  }  </script>
+
+        <div id="ctl00_MainContent_SlidesHolder">
+	            
+                <ul class="homepage-slider">
+                    
+                            <li>
+                                <img src='../../../upload/images/20d137b124b54de591ca6ad9da6b85c5.png' alt=""  />
+						        <div class="slide-info">SOCOMEC  slide</div> 
+                            </li>                            
+                        
+                            <li>
+                                <img src='../../../upload/images/32b775aa3e9a482ba5604a2c51ba2f94.jpg' alt=""  />
+						        <div class="slide-info">MAKELSAN</div> 
+                            </li>                            
+                        
+                            <li>
+                                <img src='../../../upload/images/fe92a95dfc734ed8b0b2b0be19816d2d.jpg' alt=""  />
+						        <div class="slide-info">AXIS</div> 
+                            </li>                            
+                        
+                            <li>
+                                <img src='../../../upload/images/4a703ca78b7448e0aef0747d8fbb8595.jpg' alt=""  />
+						        <div class="slide-info">FLUKE</div> 
+                            </li>                            
+                        
+                            <li>
+                                <img src='../../../upload/images/b4eecc770d5d4e6d9cf6bd53dda79ccc.jpg' alt=""  />
+						        <div class="slide-info">PTL SOLAR Sytem</div> 
+                            </li>                            
+                        
+                            <li>
+                                <img src='../../../upload/images/53f0a78ff28245c69a3bb7a601eb646a.jpg' alt=""  />
+						        <div class="slide-info">MAKELSAN</div> 
+                            </li>                            
+                        
+                </ul>             
+         
+</div>
+
+         <div class="section home-cat-wrapper">
+	    	<div class="container">
+
+            <div class="search">
+                <input type="text" id="keyword" />
+                <button class="srcBtn"></button>
+            </div>
+
+              <ul class="home-categories">
+                 
+                            <li><a href='index.html' alt=""/> SOCOMEC</a></li>                            
+                        
+                            <li><a href='../2/index.html' alt=""/> MAKELSAN</a></li>                            
+                        
+                            <li><a href='../3/index.html' alt=""/> AXIS</a></li>                            
+                        
+                            <li><a href='../4/index.html' alt=""/> FLUKE</a></li>                            
+                        
+                            <li><a href='../5/index.html' alt=""/> PTL SOLAR</a></li>                            
+                        
+              </ul>
+
+              <div class="social">
+                  <a target="_blank" href="https://www.youtube.com/"><img src="../../../Pics/ico2.png"/></a>
+                  <a target="_blank" href="https://www.facebook.com/"><img src="../../../Pics/ico3.png"/></a>
+              </div>
+
+	    	</div>
+        </div>
+
+
+
+
+        <div class="section">
+	    	<div class="container">
+				<div class="row">
+
+                    
+                    <h2> Məhsullar</h2>
+
+                   
+
+				</div>
+				
+			</div>
+	    </div>
+
+            <div class="section">
+	    	<div class="container">
+
+                <h2>
+                    Xəbərlər</h2>
+
+                   
+
+
+
+					        <div class="col-sm-4">						        
+						        <div class="shop-item">							        
+							        <div class="image">
+								        <a href='../../news/1/reshena-qlavnaya-problema-akkumulyatorov-novoqo-pokoleniya.html'><img src="../../../upload/images/f63e70affb734b62a4345330a3027811.jpg" alt="Решена главная проблема аккумуляторов нового поколения"></a>
+							        </div>
+						             							        
+								    <h2><a href='../../news/1/reshena-qlavnaya-problema-akkumulyatorov-novoqo-pokoleniya.html'>Решена главная проблема аккумуляторов нового поколения</a></h2>
+							        							        
+							        <div class="description">
+								       <a href='../../news/1/reshena-qlavnaya-problema-akkumulyatorov-novoqo-pokoleniya.html'>Исследователи из Кембриджского университета вместе с сотрудниками</a> <br />
+                                        <time>2016-09-27</time>	
+							        </div>		
+                                                                                                            				
+						        </div>						        
+					        </div>
+
+                            
+                        
+
+
+
+					        <div class="col-sm-4">						        
+						        <div class="shop-item">							        
+							        <div class="image">
+								        <a href='../../news/2/fiziki-nauchilis-pechatat-maqniti-na-3d-printere.html'><img src="../../../upload/images/a644ed62bcc747da846686fb71b12f40.jpg" alt="Физики научились печатать магниты на 3D-принтере"></a>
+							        </div>
+						             							        
+								    <h2><a href='../../news/2/fiziki-nauchilis-pechatat-maqniti-na-3d-printere.html'>Физики научились печатать магниты на 3D-принтере</a></h2>
+							        							        
+							        <div class="description">
+								       <a href='../../news/2/fiziki-nauchilis-pechatat-maqniti-na-3d-printere.html'>Группа физиков и инженеров из венского Института</a> <br />
+                                        <time>2016-10-27</time>	
+							        </div>		
+                                                                                                            				
+						        </div>						        
+					        </div>
+
+                            
+                        
+
+
+
+					        <div class="col-sm-4">						        
+						        <div class="shop-item">							        
+							        <div class="image">
+								        <a href='../../news/3/google-ibm-i-facebook-budut-delat-iskusstvenniy-intellekt-vmeste.html'><img src="../../../upload/images/5bf3babe3c164aea90c778ad49713d92.jpg" alt="Google, IBM и Facebook будут делать искусственный интеллект вместе"></a>
+							        </div>
+						             							        
+								    <h2><a href='../../news/3/google-ibm-i-facebook-budut-delat-iskusstvenniy-intellekt-vmeste.html'>Google, IBM и Facebook будут делать искусственный интеллект вместе</a></h2>
+							        							        
+							        <div class="description">
+								       <a href='../../news/3/google-ibm-i-facebook-budut-delat-iskusstvenniy-intellekt-vmeste.html'>Google, IBM и Facebook будут делать искусственный интеллект</a> <br />
+                                        <time>2016-09-30</time>	
+							        </div>		
+                                                                                                            				
+						        </div>						        
+					        </div>
+
+                            
+                        
+
+
+
+					        <div class="col-sm-4">						        
+						        <div class="shop-item">							        
+							        <div class="image">
+								        <a href='../../news/4/astrofiziki-sozdali-sverxtochnuyu-kartu-mlechnoqo-puti.html'><img src="../../../upload/images/3429ca6494a04cd0a5fd10478ad2b253.jpg" alt="Астрофизики создали сверхточную карту Млечного пути"></a>
+							        </div>
+						             							        
+								    <h2><a href='../../news/4/astrofiziki-sozdali-sverxtochnuyu-kartu-mlechnoqo-puti.html'>Астрофизики создали сверхточную карту Млечного пути</a></h2>
+							        							        
+							        <div class="description">
+								       <a href='../../news/4/astrofiziki-sozdali-sverxtochnuyu-kartu-mlechnoqo-puti.html'>Международная группа ученых-астрофизиков создала сверхточную карту</a> <br />
+                                        <time>2016-10-27</time>	
+							        </div>		
+                                                                                                            				
+						        </div>						        
+					        </div>
+
+                            
+                        
+
+
+
+					        <div class="col-sm-4">						        
+						        <div class="shop-item">							        
+							        <div class="image">
+								        <a href='../../news/5/d-wave-kvantoviy-kompyuter.html'><img src="../../../upload/images/348fc7e3857c46219a14f6d248a21728.jpg" alt="D-Wave, квантовый компьютер"></a>
+							        </div>
+						             							        
+								    <h2><a href='../../news/5/d-wave-kvantoviy-kompyuter.html'>D-Wave, квантовый компьютер</a></h2>
+							        							        
+							        <div class="description">
+								       <a href='../../news/5/d-wave-kvantoviy-kompyuter.html'>Компьютеры D-Wave работают на принципе квантовой релаксации</a> <br />
+                                        <time>2016-10-17</time>	
+							        </div>		
+                                                                                                            				
+						        </div>						        
+					        </div>
+
+                            
+                        
+
+
+
+					        <div class="col-sm-4">						        
+						        <div class="shop-item">							        
+							        <div class="image">
+								        <a href='../../news/6/d-wave-systems-sobiraetsya-vipustit-noviy-moshniy-kvantoviy-kompyuter.html'><img src="../../../upload/images/f79c3c6f766b4ab3b3f05e7d4c460c56.jpg" alt="D-Wave Systems собирается выпустить новый мощный квантовый компьютер"></a>
+							        </div>
+						             							        
+								    <h2><a href='../../news/6/d-wave-systems-sobiraetsya-vipustit-noviy-moshniy-kvantoviy-kompyuter.html'>D-Wave Systems собирается выпустить новый мощный квантовый компьютер</a></h2>
+							        							        
+							        <div class="description">
+								       <a href='../../news/6/d-wave-systems-sobiraetsya-vipustit-noviy-moshniy-kvantoviy-kompyuter.html'>Компания D-Wave Systems запланировала выпуск мощного нового квантового компьютера.</a> <br />
+                                        <time>2016-10-12</time>	
+							        </div>		
+                                                                                                            				
+						        </div>						        
+					        </div>
+
+                            
+                        
+
+
+	    	</div>
+         </div>
+
+
+		<!-- Our Clients -->
+	    <div class="section">
+	    	<div class="container">
+	    		<h2>Referanslar</h2>
+				<div class="clients-logo-wrapper text-center row">
+
+                  
+                            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href='../../clients/1/makelsan-ups.html'><img src="../../../upload/images/c47cfa51567847a1811c246106dea9e3.png" alt="MAKELSAN   UPS"></a></div>                                                     
+                        
+                            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href='../../clients/2/socomec-ups.html'><img src="../../../upload/images/58ed44cfed9e42b7bf00aa22fbec2747.png" alt="SOCOMEC UPS"></a></div>                                                     
+                        
+                            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href='../../clients/3/piller.html'><img src="../../../upload/images/5779088228614f7c8991f8dfe0d86ebc.png" alt="PİLLER"></a></div>                                                     
+                        
+                            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href='../../clients/4/axis.html'><img src="../../../upload/images/72b84aa9319b4248ab77182b674535ee.png" alt="AXİS"></a></div>                                                     
+                        
+                            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href='../../clients/5/fluke.html'><img src="../../../upload/images/ab8f54a1fc99418a9f228e2c845a02c4.jpg" alt="FLUKE"></a></div>                                                     
+                        
+                            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href='../../clients/6/ptl-solar.html'><img src="../../../upload/images/daccf732a1654352ab95535811f24c74.png" alt="PTL SOLAR"></a></div>                                                     
+                        
+                            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href='../../clients/7/inform.html'><img src="../../../upload/images/4c5772ee3eda4ff8acefa80aa5b52122.jpg" alt="inform"></a></div>                                                     
+                        
+					
+				</div>
+			</div>
+	    </div>
+	    <!-- End Our Clients -->
+
+
+
+ 
+
+
+	    <!-- Footer -->
+	    <div class="footer">
+
+
+        
+        <div class="fast-contact">Bizə yazın</div>		
+
+        <div class="main-contact-form">                                       
+
+                <span class="contact-close">X</span>
+                <div class="contact-form-wrapper">
+		            <div class="form-horizontal" role="form">                                                
+
+				        <div class="form-group">
+					        <label for="contact-name" class="col-sm-3 control-label"><b>Ad,Soyad</b></label>
+					        <div class="col-sm-9">
+						        <input class="form-control" id="contact-name" type="text" placeholder="">
+					        </div>
+				        </div>                        
+
+				        <div class="form-group">
+					        <label for="contact-email" class="col-sm-3 control-label"><b>E-mail</b></label>
+					        <div class="col-sm-9">
+						        <input class="form-control" id="contact-email" type="text" placeholder="">
+					        </div>
+				        </div>
+
+				        <div class="form-group">
+					        <label for="contact-message" class="col-sm-3 control-label"><b>Mətn</b></label>
+					        <div class="col-sm-9">
+						        <textarea class="form-control" rows="5" id="contact-message"></textarea>
+					        </div>
+				        </div>
+				        <div class="form-group">
+                            <label class="col-sm-6 control-label cformRes" style="text-align:right"></label>
+					        <div class="col-sm-6">
+						        <button type="submit" class="btn pull-right">Göndər</button>
+					        </div>
+				        </div>
+		            </div>
+		         </div>
+         </div>
+
+
+	    	<div class="container">
+		    	<div class="row">
+		    		
+		    		<div class="col-footer col-md-4 col-xs-6">
+		    			<h3>Əlaqə</h3>
+		    			<p class="contact-us-details">
+	        				<b>Ünvan:</b> Bakı şəhəri, Nobel prospekti - 23, 7-ci mərtəbə <br/>
+	        				<b>Telefon:</b> +994 50 220 80 61<br/>	        				
+	        				<b>e-mail:</b>  zuvand@mail.ru
+  service.zuvand@gmail.com
+               info@zuvand.az
+	        			</p>
+		    		</div>
+		    		<div class="col-footer support-footer col-md-2 col-xs-6">
+		    			<h2>Bizdən soruşun</h2>
+                        <span class="work-time"></span>
+                        <div class="sup-fot-item">          
+                            <span class="sfi-left"> İş vaxtı : </span>
+                            <span class="sfi-right"> +994 12 598 85 17 </span>
+                        </div>
+                          
+                        <div class="sup-fot-item">
+                            <span class="sfi-left"> İş vaxtı sonrası  :</span>
+                            <span class="sfi-right"> 
+                                +994 50 220 80 61  <br/>
+		                        +994 50 569 51 88 <br/>
+			                    +994 50 744 74 14 <br/>
+                            </span>
+                        </div>
+                                                   
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<div class="col-md-12">
+		    			<div class="footer-copyright"> © 2016 zuvand.com  |  Bütün hüquqları qorunur </div>
+		    		</div>
+		    	</div>
+		    </div>
+	    </div>
+
+
+        <!-- Javascripts -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../../js/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+        <script src="../../../js/jquery.fitvids.js"></script>
+        <script src="../../../js/jquery.sequence-min.js"></script>
+        <script src="../../../js/jquery.bxslider.js"></script>
+        <script src="../../../js/main-menu.js"></script>
+        <script src="../../../js/template.js"></script>        
+    
+    
+        <script>
+            var lang = "az";
+        </script>
+        
+    <script src="../../../frontend/fancybox/jquery.fancybox.js"></script> 
+    <script src="../../../js/custom.js"></script> 
+    
+</form>
+
+</body>
+
+</html>

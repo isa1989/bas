@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_MasterHead"><link rel="shortcut icon" href="../../../favicon.ico" />
+<meta charset="utf-8" /><link rel="shortcut icon" href="../../../img/logo.png" /><meta name="author" content="Nasir@MHM" /><meta name="robots" content="index, follow" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="stylesheet" href="../../../css/bootstrap.min.css" /><link rel="stylesheet" href="../../../css/icomoon-social.css" /><link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800" rel="stylesheet" type="text/css" />
+
+    
+    <!--START CSS--> 
+    <link rel="stylesheet" href="../../../css/leaflet.css" /><link rel="stylesheet" href="../../../css/main.css" />
+    
+
+    <!--[if lt IE 9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+    <![endif]-->  
+    
+<meta name="description" content="" /><meta name="keywords" content="" /><meta name="description" content="" /><meta name="keywords" content="" /><title>
+	ZUVAND
+</title></head>
+
+
+<body>
+
+<div class="all-site">
+
+<div id="fb-root"></div>
+
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=644924598860420";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<script>!function (d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id))
+    { js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); }
+}
+(document, "script", "twitter-wjs");
+</script>
+
+
+<form name="aspnetForm" method="post" action="socomec-ups.html" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNDM3OTc1NTU5D2QWAmYPZBYCAgMPZBYkAgYPFgIeBFRleHQFywE8dWwgY2xhc3M9ImxhbmciPjxsaT48YSBjbGFzcz0iIiBocmVmPSIvYXovY2xpZW50cy8yL3NvY29tZWMtdXBzIj5hejwvYT48L2xpPjxsaT48YSBjbGFzcz0iIiBocmVmPSIvcnUvY2xpZW50cy8yL3NvY29tZWMtdXBzIj5ydTwvYT48L2xpPjxsaT48YSBjbGFzcz0iYWN0aXZlIiBocmVmPSIvZW4vY2xpZW50cy8yL3NvY29tZWMtdXBzIj5lbjwvYT48L2xpPmQCBw9kFgYCAQ8WAh8ABQtTT0NPTUVDIFVQU2QCAw8WAh8ABVE8aW1nIGFsdD0iU09DT01FQyBVUFMiIHNyYz0iL3VwbG9hZC9pbWFnZXMvNThlZDQ0Y2ZlZDllNDJiN2JmMDBhYTIyZmJlYzI3NDcucG5nIj5kAgUPFgIfAAX8GDxwPjxpbWcgc3JjPSJodHRwOi8vd3d3LnNvY29tZWMucnUvZmlsZXMvbGl2ZS9zaXRlcy9zeXN0ZW1zaXRlL2ZpbGVzL0NPUlBPUkFURS9lbl9icmVmL2NvcnBvXzEzOV9iM18xMDI0eDIwMC5KUEciIC8+PC9wPg0KDQo8cD48aW1nIGFsdD0iIiBzcmM9Imh0dHA6Ly93d3cuc29jb21lYy51cy9maWxlcy9saXZlL3NpdGVzL3N5c3RlbXNpdGUvZmlsZXMvU09MVVRJT05TL1Bvd2VyJTIwY29udHJvbCUyMGFuZCUyMHNhZmV0eS9sb2dvXzMxNl8wMV8xNjB4MTQ1LnBuZyIgc3R5bGU9ImhlaWdodDoxNDVweDsgd2lkdGg6MTYwcHgiIC8+PC9wPg0KDQo8aDE+UG93ZXIgQ29udHJvbCAmYW1wOyBTYWZldHk8L2gxPg0KDQo8aDI+TWFuYWdpbmcgcG93ZXIgYW5kIHByb3RlY3RpbmcgaW5kaXZpZHVhbHMgYW5kIHByb3BlcnR5LjwvaDI+DQoNCjxwPjxiciAvPg0KU29jb21lYyZyc3F1bztzIGV4cGVydGlzZSBpbiB0aGlzIGRvbWFpbiBpcyB1bnF1ZXN0aW9uYWJsZTsgdGhlIGNvbXBhbnkgaXMgYW4gdW5kaXNwdXRlZCBsZWFkZXIgaW4gcG93ZXIgc3dpdGNoaW5nIGFuZCBjaGFuZ2VvdmVyIGZ1bmN0aW9ucywgYW5kIGhhcyBiZWVuIGEgc3BlY2lhbGlzdCBtYW51ZmFjdHVyZXIgb2YgZWxlY3RyaWNhbCBlcXVpcG1lbnQgc2luY2UgMTkyMi4gVGhlIGNvbXBhbnkgaGFzIGxvbmcgZGVmZW5kZWQgdGhlIGJlbmVmaXRzIG9mIGZ1c2UgcHJvdGVjdGlvbiBmb3IgaW5kaXZpZHVhbHMgYW5kIHByb3BlcnR5LCBhbmQgaGFzIGJlY29tZSBhIG1ham9yIHBsYXllciBpbiBjdXR0aW5nLWVkZ2UgdGVjaG5vbG9neSBzdWNoIGFzIHRoZSBtb25pdG9yaW5nIGFuZCBkZXRlY3Rpb24gb2YgaW5zdWxhdGlvbiBkZWZlY3RzLiBTb2NvbWVjIGd1YXJhbnRlZXMgc29sdXRpb25zIGFuZCBzZXJ2aWNlcyB3aGljaCBhcmUgYm90aCByZWxldmFudCBhbmQgZWZmaWNpZW50LjwvcD4NCg0KPHVsPg0KCTxsaT48YSBocmVmPSJodHRwOi8vd3d3LnNvY29tZWMudXMvcG93ZXItY29udHJvbC1zYWZldHlfZW4uaHRtbCI+RGlzY292ZXIgb3VyIHNvbHV0aW9uczwvYT48L2xpPg0KPC91bD4NCg0KPHA+PGltZyBhbHQ9IiIgc3JjPSJodHRwOi8vd3d3LnNvY29tZWMudXMvZmlsZXMvbGl2ZS9zaXRlcy9zeXN0ZW1zaXRlL2ZpbGVzL1NPTFVUSU9OUy9FbmVyZ3klMjBlZmZpY2llbmN5L2xvZ29fMzEzXzAxXzE2MHgxNDUucG5nIiBzdHlsZT0iaGVpZ2h0OjE0NXB4OyB3aWR0aDoxNjBweCIgLz48L3A+DQoNCjxoMT5FbmVyZ3kgRWZmaWNpZW5jeTwvaDE+DQoNCjxoMj5JbXByb3ZpbmcgYnVpbGRpbmcgYW5kIGZhY2lsaXR5IGVuZXJneSBlZmZpY2llbmN5LjwvaDI+DQoNCjxwPjxiciAvPg0KU29jb21lYyBzb2x1dGlvbnMsIHJhbmdpbmcgZnJvbSBzZW5zb3JzIHRvIHRoZSB3aWRlIGNob2ljZSBvZiBpbm5vdmF0aXZlLCBtb2R1bGFyIHNvZnR3YXJlIHBhY2thZ2VzLCBhcmUgZHJpdmVuIGJ5IGV4cGVydHMgaW4gZW5lcmd5IGVmZmljaWVuY3kuIFRoZXkgbWVldCB0aGUgZXNzZW50aWFsIHJlcXVpcmVtZW50cyBvZiBtYW5hZ2VycyBvciBvcGVyYXRvcnMgb2YgdGVydGlhcnksIGluZHVzdHJpYWwgb3IgbG9jYWwgYXV0aG9yaXR5IGJ1aWxkaW5ncywgYW5kIG1ha2UgaXQgcG9zc2libGUgdG86PGJyIC8+DQomYnVsbDsgbWVhc3VyZSBwb3dlciBjb25zdW1wdGlvbiwgaWRlbnRpZnkgc291cmNlcyBvZiBleGNlc3MgY29uc3VtcHRpb24sIGFuZCByYWlzZSBvY2N1cGFudCBhd2FyZW5lc3MsPGJyIC8+DQomYnVsbDsgbGltaXQgcmVhY3RpdmUgZW5lcmd5IGFuZCBwcmV2ZW50IGFzc29jaWF0ZWQgdGFyaWZmIHBlbmFsdGllcyw8YnIgLz4NCiZidWxsOyB1c2UgdGhlIGJlc3QgdGFyaWZmcywgY2hlY2sgc3VwcGxpZXIgaW52b2ljaW5nIGFuZCBhY2N1cmF0ZWx5IGRpc3RyaWJ1dGUgZW5lcmd5IGJpbGxzIGFtb25nc3QgY29uc3VtZXIgZW50aXRpZXMuPC9wPg0KDQo8dWw+DQoJPGxpPjxhIGhyZWY9Imh0dHA6Ly93d3cuc29jb21lYy51cy9lbmVyZ3ktZWZmaWNpZW5jeS1lbi5odG1sIj5EaXNjb3ZlciBvdXIgc29sdXRpb25zPC9hPjwvbGk+DQo8L3VsPg0KDQo8cD48aW1nIGFsdD0iIiBzcmM9Imh0dHA6Ly93d3cuc29jb21lYy51cy9maWxlcy9saXZlL3NpdGVzL3N5c3RlbXNpdGUvZmlsZXMvU09MVVRJT05TL0NyaXRpY2FsJTIwcG93ZXIvbG9nb18zMTVfMDFfMTYweDE0NS5wbmciIHN0eWxlPSJoZWlnaHQ6MTQ1cHg7IHdpZHRoOjE2MHB4IiAvPjwvcD4NCg0KPGgxPkNyaXRpY2FsIFBvd2VyPC9oMT4NCg0KPGgyPkVuc3VyaW5nIHRoZSBhdmFpbGFiaWxpdHkgb2YgaGlnaC1xdWFsaXR5IHBvd2VyIGZvciBjcml0aWNhbCBhcHBsaWNhdGlvbnMuPC9oMj4NCg0KPHA+PGJyIC8+DQpUaGFua3MgdG8gdGhlIGNvbXBhbnkmcnNxdW87cyB3aWRlIHJhbmdlIG9mIGNvbnRpbnVvdXNseSBldm9sdmluZyBwcm9kdWN0cywgc29sdXRpb25zIGFuZCBzZXJ2aWNlcywgU29jb21lYyBhcmUgZXhwZXJ0cyBpbiB0aGUgdGhyZWUgZXNzZW50aWFsIHRlY2hub2xvZ2llcyB0aGF0IGNhbiBlbnN1cmUgdGhlIGhpZ2ggYXZhaWxhYmlsaXR5IG9mIHN1cHBseSB0byBjcml0aWNhbCBmYWNpbGl0aWVzIGFuZCBidWlsZGluZ3MgaS5lLjo8YnIgLz4NCiZidWxsOyB1bmludGVycnVwdGlibGUgcG93ZXIgc3VwcGxpZXMgKFVQUykgdGhhdCBwcm92aWRlIGhpZ2gtcXVhbGl0eSBwb3dlciBhbmQgcmVkdWNlIGRpc3RvcnRpb24gYW5kIGludGVycnVwdGlvbnMgdG8gdGhlIG1haW5zIHN1cHBseSBkdWUgdG8gdGhlaXIgcG93ZXIgc3RvcmFnZSBiYWNrdXAsPGJyIC8+DQomYnVsbDsgY2hhbmdlb3ZlciBvZiBoaWdoIGF2YWlsYWJpbGl0eSBzb3VyY2VzIHRvIHRyYW5zZmVyIHN1cHBseSB0byBhbiBvcGVyYXRpb25hbCBiYWNrdXAgc291cmNlLDxiciAvPg0KJmJ1bGw7IGNvbnRpbnVvdXMgbW9uaXRvcmluZyBvZiBpbnN0YWxsYXRpb24gZmFjaWxpdGllcyB0byBwcmV2ZW50IGZhaWx1cmVzIGFuZCByZWR1Y2Ugb3BlcmF0aW5nIGxvc3Nlcy48L3A+DQoNCjxwPlRoaXMgc29sdXRpb24gaXMgbm90IGF2YWlsYWJsZSBpbiB0aGUgVVMsIGZvciBvdGhlciBjb3VudHJpZXMsIHBsZWFzZSZuYnNwOzxhIGhyZWY9Imh0dHA6Ly93d3cuc29jb21lYy5jb20vY3JpdGljYWwtcG93ZXJfZW4uaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPmNsaWNrIGhlcmUgdG8gZGlzY292ZXIgb3VyIHNvbHV0aW9uczwvYT48L3A+DQpkAg0PFgIfAAUHQ29udGFjdGQCDg8WAh8ABQdBZGRyZXNzZAIPDxYCHwAFKEJha3UgY2l0eSAsIE5vYmVsIGF2ZW51ZSAtIDIzLCA3dGggZmxvb3JkAhAPFgIfAAUFUGhvbmVkAhEPFgIfAAURKzk5NCA1MCAyMjAgODAgNjFkAhIPFgIfAAUGZS1tYWlsZAITDxYCHwAFOHp1dmFuZEBtYWlsLnJ1DQpzZXJ2aWNlLnp1dmFuZEBnbWFpbC5jb20NCmluZm9AenV2YW5kLmF6ZAIUDxYCHwAFBkFzayBVc2QCFQ8WAh8ABQlXb3JrIHRpbWVkAhYPFgIfAAURKzk5NCAxMiA1OTggODUgMTdkAhcPFgIfAAUPQWZ0ZXIgd29yayB0aW1lZAIYDxYCHwAFESs5OTQgNTAgMjIwIDgwIDYxZAIZDxYCHwAFESs5OTQgNTAgNTY5IDUxIDg4ZAIaDxYCHwAFESs5OTQgNTAgNzQ0IDc0IDE0ZAIbDxYCHwAFCnp1dmFuZC5jb21kAhwPFgIfAAUTQWxsIHJpZ2h0cyByZWNlcnZlZGRkv5YnV1H8LyQZbM/zT8EPUuZFJ8pYwHRY9J5iTmmwNHc=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4125190D" />
+
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        
+
+        <!-- Navigation & Logo-->
+        <div class="mainmenu-wrapper">
+	        <div class="container">
+
+		        <nav id="mainmenu" class="mainmenu">
+					<ul>
+						<li class="logo-wrapper"><a href="../../../index.html"><img src="../../../Pics/logo.png" alt="Zuvand"></a></li>                                               
+
+						<li id="mhome"><a href="../../../index.html"> HOME </a></li>
+						<li id="mproducts"><a href="../../product/list/index.html">PRODUCTS  </a></li>
+						<li id="mservices"><a href="../../pages/2/services.html"> SERVICES </a></li>
+						<li id="mdownloads"><a href="../../downloads/1/index.html">DOWNLOADS </a></li>
+                        <li id="mabout"><a href="../../pages/1/about.html">ABOUT </a></li>
+                        <li id="mcontact"><a href="../../contact/index.html">CONTACT </a></li>
+
+					</ul>
+				</nav>
+
+                
+                <ul class="lang"><li><a class="" href="../../../az/clients/2/socomec-ups.html">az</a></li><li><a class="" href="../../../ru/clients/2/socomec-ups.html">ru</a></li><li><a class="active" href="socomec-ups.html">en</a></li>
+                 
+
+			</div>
+		</div>
+        
+        
+
+
+           <div class="section">
+               <div class="container">
+
+                   <article>
+                          <div class="blog-post blog-single-post">
+							        <div class="single-post-title">
+								        <h3>SOCOMEC UPS</h3>
+							        </div>
+                                   <div>
+
+							            <div class="single-post-content">
+							                <div class="single-post-image">
+								                <img alt="SOCOMEC UPS" src="../../../upload/images/58ed44cfed9e42b7bf00aa22fbec2747.png">
+							                </div>
+                                            <p><img src="http://www.socomec.ru/files/live/sites/systemsite/files/CORPORATE/en_bref/corpo_139_b3_1024x200.JPG" /></p>
+
+<p><img alt="" src="http://www.socomec.us/files/live/sites/systemsite/files/SOLUTIONS/Power%20control%20and%20safety/logo_316_01_160x145.png" style="height:145px; width:160px" /></p>
+
+<h1>Power Control &amp; Safety</h1>
+
+<h2>Managing power and protecting individuals and property.</h2>
+
+<p><br />
+Socomec&rsquo;s expertise in this domain is unquestionable; the company is an undisputed leader in power switching and changeover functions, and has been a specialist manufacturer of electrical equipment since 1922. The company has long defended the benefits of fuse protection for individuals and property, and has become a major player in cutting-edge technology such as the monitoring and detection of insulation defects. Socomec guarantees solutions and services which are both relevant and efficient.</p>
+
+<ul>
+	<li><a href="http://www.socomec.us/power-control-safety_en.html">Discover our solutions</a></li>
+</ul>
+
+<p><img alt="" src="http://www.socomec.us/files/live/sites/systemsite/files/SOLUTIONS/Energy%20efficiency/logo_313_01_160x145.png" style="height:145px; width:160px" /></p>
+
+<h1>Energy Efficiency</h1>
+
+<h2>Improving building and facility energy efficiency.</h2>
+
+<p><br />
+Socomec solutions, ranging from sensors to the wide choice of innovative, modular software packages, are driven by experts in energy efficiency. They meet the essential requirements of managers or operators of tertiary, industrial or local authority buildings, and make it possible to:<br />
+&bull; measure power consumption, identify sources of excess consumption, and raise occupant awareness,<br />
+&bull; limit reactive energy and prevent associated tariff penalties,<br />
+&bull; use the best tariffs, check supplier invoicing and accurately distribute energy bills amongst consumer entities.</p>
+
+<ul>
+	<li><a href="http://www.socomec.us/energy-efficiency-en.html">Discover our solutions</a></li>
+</ul>
+
+<p><img alt="" src="http://www.socomec.us/files/live/sites/systemsite/files/SOLUTIONS/Critical%20power/logo_315_01_160x145.png" style="height:145px; width:160px" /></p>
+
+<h1>Critical Power</h1>
+
+<h2>Ensuring the availability of high-quality power for critical applications.</h2>
+
+<p><br />
+Thanks to the company&rsquo;s wide range of continuously evolving products, solutions and services, Socomec are experts in the three essential technologies that can ensure the high availability of supply to critical facilities and buildings i.e.:<br />
+&bull; uninterruptible power supplies (UPS) that provide high-quality power and reduce distortion and interruptions to the mains supply due to their power storage backup,<br />
+&bull; changeover of high availability sources to transfer supply to an operational backup source,<br />
+&bull; continuous monitoring of installation facilities to prevent failures and reduce operating losses.</p>
+
+<p>This solution is not available in the US, for other countries, please&nbsp;<a href="http://www.socomec.com/critical-power_en.html" target="_blank">click here to discover our solutions</a></p>
+
+                                            <div style="clear:both"></div>
+
+							            </div>     
+                                       
+
+                                            <div class="soc-items clearfix">
+
+                                                <div class="share"><div class="fb-share-button"  data-type="button_count"></div></div>
+
+                                                <div class="share"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a></div>
+
+                                                <div class="share" >
+                                                    <!-- Place this tag in your head or just before your close body tag. -->
+                                                    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+                                                    <!-- Place this tag where you want the +1 button to render. -->
+                                                    <div class="g-plusone" data-size="medium"  ></div>
+
+                                                </div>
+
+                                            </div>                                                                          
+                                  </div>
+				          </div>
+                   </article>
+
+
+
+               </div>
+           </div>
+
+
+
+
+
+
+	    <!-- Footer -->
+	    <div class="footer">
+
+
+        
+        <div class="fast-contact">Wrtite us</div>		
+
+        <div class="main-contact-form">                                       
+
+                <span class="contact-close">X</span>
+                <div class="contact-form-wrapper">
+		            <div class="form-horizontal" role="form">                                                
+
+				        <div class="form-group">
+					        <label for="contact-name" class="col-sm-3 control-label"><b>Name , Surname</b></label>
+					        <div class="col-sm-9">
+						        <input class="form-control" id="contact-name" type="text" placeholder="">
+					        </div>
+				        </div>                        
+
+				        <div class="form-group">
+					        <label for="contact-email" class="col-sm-3 control-label"><b>E-mail</b></label>
+					        <div class="col-sm-9">
+						        <input class="form-control" id="contact-email" type="text" placeholder="">
+					        </div>
+				        </div>
+
+				        <div class="form-group">
+					        <label for="contact-message" class="col-sm-3 control-label"><b>Text</b></label>
+					        <div class="col-sm-9">
+						        <textarea class="form-control" rows="5" id="contact-message"></textarea>
+					        </div>
+				        </div>
+				        <div class="form-group">
+                            <label class="col-sm-6 control-label cformRes" style="text-align:right"></label>
+					        <div class="col-sm-6">
+						        <button type="submit" class="btn pull-right">Send</button>
+					        </div>
+				        </div>
+		            </div>
+		         </div>
+         </div>
+
+
+	    	<div class="container">
+		    	<div class="row">
+		    		
+		    		<div class="col-footer col-md-4 col-xs-6">
+		    			<h3>Contact</h3>
+		    			<p class="contact-us-details">
+	        				<b>Address:</b> Baku city , Nobel avenue - 23, 7th floor <br/>
+	        				<b>Phone:</b> +994 50 220 80 61<br/>	        				
+	        				<b>e-mail:</b>  zuvand@mail.ru
+service.zuvand@gmail.com
+info@zuvand.az
+	        			</p>
+		    		</div>
+		    		<div class="col-footer support-footer col-md-2 col-xs-6">
+		    			<h2>Ask Us</h2>
+                        <span class="work-time"></span>
+                        <div class="sup-fot-item">          
+                            <span class="sfi-left"> Work time : </span>
+                            <span class="sfi-right"> +994 12 598 85 17 </span>
+                        </div>
+                          
+                        <div class="sup-fot-item">
+                            <span class="sfi-left"> After work time  :</span>
+                            <span class="sfi-right"> 
+                                +994 50 220 80 61  <br/>
+		                        +994 50 569 51 88 <br/>
+			                    +994 50 744 74 14 <br/>
+                            </span>
+                        </div>
+                                                   
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<div class="col-md-12">
+		    			<div class="footer-copyright"> © 2016 zuvand.com  |  All rights recerved </div>
+		    		</div>
+		    	</div>
+		    </div>
+	    </div>
+
+
+        <!-- Javascripts -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../../js/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+        <script src="../../../js/jquery.fitvids.js"></script>
+        <script src="../../../js/jquery.sequence-min.js"></script>
+        <script src="../../../js/jquery.bxslider.js"></script>
+        <script src="../../../js/main-menu.js"></script>
+        <script src="../../../js/template.js"></script>        
+    
+    
+        <script>
+            var lang = "en";
+        </script>
+        
+    <script src="../../../frontend/fancybox/jquery.fancybox.js"></script> 
+    <script src="../../../js/custom.js"></script> 
+    
+</form>
+
+</body>
+
+</html>

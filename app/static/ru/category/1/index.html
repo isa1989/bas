@@ -1,0 +1,452 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_MasterHead"><link rel="shortcut icon" href="../../../favicon.ico" />
+<meta charset="utf-8" /><link rel="shortcut icon" href="../../../img/logo.png" /><meta name="author" content="Nasir@MHM" /><meta name="robots" content="index, follow" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="stylesheet" href="../../../css/bootstrap.min.css" /><link rel="stylesheet" href="../../../css/icomoon-social.css" /><link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800" rel="stylesheet" type="text/css" />
+
+    
+    <!--START CSS--> 
+    <link rel="stylesheet" href="../../../css/leaflet.css" /><link rel="stylesheet" href="../../../css/main.css" />
+    
+
+    <!--[if lt IE 9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+    <![endif]-->  
+    
+<meta name="description" content="" /><meta name="keywords" content="" /><title>
+	ZUVAND
+</title></head>
+
+
+<body>
+
+<div class="all-site">
+
+<div id="fb-root"></div>
+
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=644924598860420";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<script>!function (d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id))
+    { js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); }
+}
+(document, "script", "twitter-wjs");
+</script>
+
+
+<form name="aspnetForm" method="post" action="index.html" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE3MzE5Njc4MDEPZBYCZg9kFgICAw9kFiQCBg8WAh4EVGV4dAWtATx1bCBjbGFzcz0ibGFuZyI+PGxpPjxhIGNsYXNzPSIiIGhyZWY9Ii9hei9jYXRlZ29yeS8xLyI+YXo8L2E+PC9saT48bGk+PGEgY2xhc3M9ImFjdGl2ZSIgaHJlZj0iL3J1L2NhdGVnb3J5LzEvIj5ydTwvYT48L2xpPjxsaT48YSBjbGFzcz0iIiBocmVmPSIvZW4vY2F0ZWdvcnkvMS8iPmVuPC9hPjwvbGk+ZAIHD2QWCmYPZBYCAgEPFgIeC18hSXRlbUNvdW50AgYWDGYPZBYCZg8VAiQyMGQxMzdiMTI0YjU0ZGU1OTFjYTZhZDlkYTZiODVjNS5wbmcMU09DT01FQyAgVVBTZAIBD2QWAmYPFQIkMzJiNzc1YWEzZTlhNDgyYmE1NjA0YTJjNTFiYTJmOTQuanBnCE1BS0VMU0FOZAICD2QWAmYPFQIkZmU5MmE5NWRmYzczNGVkOGIwYjJiMGJlMTk4MTZkMmQuanBnBEFYSVNkAgMPZBYCZg8VAiQ0YTcwM2NhNzhiNzQ0OGUwYWVmMDc0N2Q4ZmJiODU5NS5qcGcAZAIED2QWAmYPFQIkYjRlZWNjNzcwZDVkNGU2ZDljZjZiZDUzZGRhNzljY2MuanBnAGQCBQ9kFgJmDxUCJDUzZjBhNzhmZjI4MjQ1YzY5YTNiYjdhNjAxZWI2NDZhLmpwZwBkAgEPFgIfAQIFFgpmD2QWAmYPFQIBMQdTT0NPTUVDZAIBD2QWAmYPFQIBMghNQUtFTFNBTmQCAg9kFgJmDxUCATMEQVhJU2QCAw9kFgJmDxUCATQFRkxVS0VkAgQPZBYCZg8VAgE1CVBUTCBTT0xBUmQCAw8WAh8BZmQCBQ8WAh8BAgYWDGYPZBYGZg8VBAExACRmNjNlNzBhZmZiNzM0YjYyYTQzNDUzMzBhMzAyNzgxMS5qcGcAZAIBDxUDATEAAGQCAg8VBAExAAAKMjAxNi0wOS0yN2QCAQ9kFgZmDxUEATIAJGE2NDRlZDYyYmNjNzQ3ZGE4NDY2ODZmYjcxYjEyZjQwLmpwZwBkAgEPFQMBMgAAZAICDxUEATIAAAoyMDE2LTEwLTI3ZAICD2QWBmYPFQQBMwAkNWJmM2JhYmUzYzE2NGFlYTkwYzc3OGFkNDk3MTNkOTIuanBnAGQCAQ8VAwEzAABkAgIPFQQBMwAACjIwMTYtMDktMzBkAgMPZBYGZg8VBAE0ACQzNDI5Y2E2NDk0YTA0Y2QwYTVmZDEwNDc4YWQyYjI1My5qcGcAZAIBDxUDATQAAGQCAg8VBAE0AAAKMjAxNi0xMC0yN2QCBA9kFgZmDxUEATUAJDM0OGZjN2UzODU3YzQ2MjE5YTE0ZjZkMjQ4YTIxNzI4LmpwZwBkAgEPFQMBNQAAZAICDxUEATUAAAoyMDE2LTEwLTE3ZAIFD2QWBmYPFQQBNgAkZjc5YzNjNmY3NjZiNGFiM2IzZjA1ZTdkNGM0NjBjNTYuanBnAGQCAQ8VAwE2AABkAgIPFQQBNgAACjIwMTYtMTAtMTJkAgcPFgIfAQIHFg5mD2QWAmYPFQQBMQxtYWtlbHNhbi11cHMkYzQ3Y2ZhNTE1Njc4NDdhMTgxMWMyNDYxMDZkZWE5ZTMucG5nDE1BS0VMU0FOIFVQU2QCAQ9kFgJmDxUEATILc29jb21lYy11cHMkNThlZDQ0Y2ZlZDllNDJiN2JmMDBhYTIyZmJlYzI3NDcucG5nC1NPQ09NRUMgVVBTZAICD2QWAmYPFQQBMwAkNTc3OTA4ODIyODYxNGY3Yzg5OTFmOGRmZTBkODZlYmMucG5nAGQCAw9kFgJmDxUEATQAJDcyYjg0YWE5MzE5YjQyNDhhYjc3MTgyYjY3NDUzNWVlLnBuZwBkAgQPZBYCZg8VBAE1ACRhYjhmNTRhMWZjOTk0MThhOWYyMjhlMmM4NDVhMDJjNC5qcGcAZAIFD2QWAmYPFQQBNgAkZGFjY2Y3MzJhMTY1NDM1MmFiOTU1MzU4MTFmMjRjNzQucG5nAGQCBg9kFgJmDxUEATcAJDRjNTc3MmVlM2VkYTRmZjhhY2VmYTgwYWE1YjUyMTIyLmpwZwBkAg0PFgIfAAUQ0JrQvtC90YLQsNC60YLRi2QCDg8WAh8ABQrQkNC00YDQtdGBZAIPDxYCHwAFTNCzLiDQkdCw0LrRgyAsINCd0L7QsdC10LvQtdCy0YHQutC40Lkg0L/RgNC+0YHQv9C10LrRgiAtIDIzLCA3LW/QuSDRjdGC0LDQti5kAhAPFgIfAAUO0KLQtdC70LXRhNC+0L1kAhEPFgIfAAURKzk5NCA1MCAyMjAgODAgNjFkAhIPFgIfAAUMZS3Qv9C+0YfRgtCwZAITDxYCHwAFOHp1dmFuZEBtYWlsLnJ1DQpzZXJ2aWNlLnp1dmFuZEBnbWFpbC5jb20NCmluZm9AenV2YW5kLmF6ZAIUDxYCHwAFGUPQv9GA0L7RgdC40YLQtSDRgyDQvdCw0YFkAhUPFgIfAAUZ0KDQsNCx0L7Rh9C40LUg0LLRgNC10LzRj2QCFg8WAh8ABRErOTk0IDEyIDU5OCA4NSAxN2QCFw8WAh8ABSTQn9C+0YHQu9C1INGA0LDQsdC+0YfQuNC1INCy0YDQtdC80Y9kAhgPFgIfAAURKzk5NCA1MCAyMjAgODAgNjFkAhkPFgIfAAURKzk5NCA1MCA1NjkgNTEgODhkAhoPFgIfAAURKzk5NCA1MCA3NDQgNzQgMTRkAhsPFgIfAAUKenV2YW5kLmNvbWQCHA8WAh8ABSLQktGB0LUg0L/RgNCw0LLQsCDQt9Cw0YnQuNGJ0LXQvdGLZGSdoUhFJ8r1JzbNhSFxNK5iP5NqOh6crKBiS2AEMwjqPQ==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        
+
+        <!-- Navigation & Logo-->
+        <div class="mainmenu-wrapper">
+	        <div class="container">
+
+		        <nav id="mainmenu" class="mainmenu">
+					<ul>
+						<li class="logo-wrapper"><a href="../../../index.html"><img src="../../../Pics/logo.png" alt="Zuvand"></a></li>                                               
+
+						<li id="mhome"><a href="../../../index.html"> ГЛАВНАЯ </a></li>
+						<li id="mproducts"><a href="../../product/list/index.html">ПРОДУКТЫ  </a></li>
+						<li id="mservices"><a href="../../pages/2/services.html"> УСЛУГИ </a></li>
+						<li id="mdownloads"><a href="../../downloads/1/index.html">ЗАГРУЗКИ </a></li>
+                        <li id="mabout"><a href="../../pages/1/about.html">О НАС </a></li>
+                        <li id="mcontact"><a href="../../contact/index.html">КОНТАКТЫ </a></li>
+
+					</ul>
+				</nav>
+
+                
+                <ul class="lang"><li><a class="" href="../../../az/category/1/index.html">az</a></li><li><a class="active" href="index.html">ru</a></li><li><a class="" href="../../../en/category/1/index.html">en</a></li>
+                 
+
+			</div>
+		</div>
+        
+        
+        
+        <script>    window.onload = function () {  $('#mhome').addClass('active');  }  </script>
+
+        <div id="ctl00_MainContent_SlidesHolder">
+	            
+                <ul class="homepage-slider">
+                    
+                            <li>
+                                <img src='../../../upload/images/20d137b124b54de591ca6ad9da6b85c5.png' alt=""  />
+						        <div class="slide-info">SOCOMEC  UPS</div> 
+                            </li>                            
+                        
+                            <li>
+                                <img src='../../../upload/images/32b775aa3e9a482ba5604a2c51ba2f94.jpg' alt=""  />
+						        <div class="slide-info">MAKELSAN</div> 
+                            </li>                            
+                        
+                            <li>
+                                <img src='../../../upload/images/fe92a95dfc734ed8b0b2b0be19816d2d.jpg' alt=""  />
+						        <div class="slide-info">AXIS</div> 
+                            </li>                            
+                        
+                            <li>
+                                <img src='../../../upload/images/4a703ca78b7448e0aef0747d8fbb8595.jpg' alt=""  />
+						        <div class="slide-info"></div> 
+                            </li>                            
+                        
+                            <li>
+                                <img src='../../../upload/images/b4eecc770d5d4e6d9cf6bd53dda79ccc.jpg' alt=""  />
+						        <div class="slide-info"></div> 
+                            </li>                            
+                        
+                            <li>
+                                <img src='../../../upload/images/53f0a78ff28245c69a3bb7a601eb646a.jpg' alt=""  />
+						        <div class="slide-info"></div> 
+                            </li>                            
+                        
+                </ul>             
+         
+</div>
+
+         <div class="section home-cat-wrapper">
+	    	<div class="container">
+
+            <div class="search">
+                <input type="text" id="keyword" />
+                <button class="srcBtn"></button>
+            </div>
+
+              <ul class="home-categories">
+                 
+                            <li><a href='index.html' alt=""/> SOCOMEC</a></li>                            
+                        
+                            <li><a href='../2/index.html' alt=""/> MAKELSAN</a></li>                            
+                        
+                            <li><a href='../3/index.html' alt=""/> AXIS</a></li>                            
+                        
+                            <li><a href='../4/index.html' alt=""/> FLUKE</a></li>                            
+                        
+                            <li><a href='../5/index.html' alt=""/> PTL SOLAR</a></li>                            
+                        
+              </ul>
+
+              <div class="social">
+                  <a target="_blank" href="https://www.youtube.com/"><img src="../../../Pics/ico2.png"/></a>
+                  <a target="_blank" href="https://www.facebook.com/"><img src="../../../Pics/ico3.png"/></a>
+              </div>
+
+	    	</div>
+        </div>
+
+
+
+
+        <div class="section">
+	    	<div class="container">
+				<div class="row">
+
+                    
+                    <h2> Продукты</h2>
+
+                   
+
+				</div>
+				
+			</div>
+	    </div>
+
+            <div class="section">
+	    	<div class="container">
+
+                <h2>
+                    Новости</h2>
+
+                   
+
+
+
+					        <div class="col-sm-4">						        
+						        <div class="shop-item">							        
+							        <div class="image">
+								        <a href='../../news/1/index.html'><img src="../../../upload/images/f63e70affb734b62a4345330a3027811.jpg" alt=""></a>
+							        </div>
+						             							        
+								    <h2><a href='../../news/1/index.html'></a></h2>
+							        							        
+							        <div class="description">
+								       <a href='../../news/1/index.html'></a> <br />
+                                        <time>2016-09-27</time>	
+							        </div>		
+                                                                                                            				
+						        </div>						        
+					        </div>
+
+                            
+                        
+
+
+
+					        <div class="col-sm-4">						        
+						        <div class="shop-item">							        
+							        <div class="image">
+								        <a href='../../news/2/index.html'><img src="../../../upload/images/a644ed62bcc747da846686fb71b12f40.jpg" alt=""></a>
+							        </div>
+						             							        
+								    <h2><a href='../../news/2/index.html'></a></h2>
+							        							        
+							        <div class="description">
+								       <a href='../../news/2/index.html'></a> <br />
+                                        <time>2016-10-27</time>	
+							        </div>		
+                                                                                                            				
+						        </div>						        
+					        </div>
+
+                            
+                        
+
+
+
+					        <div class="col-sm-4">						        
+						        <div class="shop-item">							        
+							        <div class="image">
+								        <a href='../../news/3/index.html'><img src="../../../upload/images/5bf3babe3c164aea90c778ad49713d92.jpg" alt=""></a>
+							        </div>
+						             							        
+								    <h2><a href='../../news/3/index.html'></a></h2>
+							        							        
+							        <div class="description">
+								       <a href='../../news/3/index.html'></a> <br />
+                                        <time>2016-09-30</time>	
+							        </div>		
+                                                                                                            				
+						        </div>						        
+					        </div>
+
+                            
+                        
+
+
+
+					        <div class="col-sm-4">						        
+						        <div class="shop-item">							        
+							        <div class="image">
+								        <a href='../../news/4/index.html'><img src="../../../upload/images/3429ca6494a04cd0a5fd10478ad2b253.jpg" alt=""></a>
+							        </div>
+						             							        
+								    <h2><a href='../../news/4/index.html'></a></h2>
+							        							        
+							        <div class="description">
+								       <a href='../../news/4/index.html'></a> <br />
+                                        <time>2016-10-27</time>	
+							        </div>		
+                                                                                                            				
+						        </div>						        
+					        </div>
+
+                            
+                        
+
+
+
+					        <div class="col-sm-4">						        
+						        <div class="shop-item">							        
+							        <div class="image">
+								        <a href='../../news/5/index.html'><img src="../../../upload/images/348fc7e3857c46219a14f6d248a21728.jpg" alt=""></a>
+							        </div>
+						             							        
+								    <h2><a href='../../news/5/index.html'></a></h2>
+							        							        
+							        <div class="description">
+								       <a href='../../news/5/index.html'></a> <br />
+                                        <time>2016-10-17</time>	
+							        </div>		
+                                                                                                            				
+						        </div>						        
+					        </div>
+
+                            
+                        
+
+
+
+					        <div class="col-sm-4">						        
+						        <div class="shop-item">							        
+							        <div class="image">
+								        <a href='../../news/6/index.html'><img src="../../../upload/images/f79c3c6f766b4ab3b3f05e7d4c460c56.jpg" alt=""></a>
+							        </div>
+						             							        
+								    <h2><a href='../../news/6/index.html'></a></h2>
+							        							        
+							        <div class="description">
+								       <a href='../../news/6/index.html'></a> <br />
+                                        <time>2016-10-12</time>	
+							        </div>		
+                                                                                                            				
+						        </div>						        
+					        </div>
+
+                            
+                        
+
+
+	    	</div>
+         </div>
+
+
+		<!-- Our Clients -->
+	    <div class="section">
+	    	<div class="container">
+	    		<h2>Реферансы</h2>
+				<div class="clients-logo-wrapper text-center row">
+
+                  
+                            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href='../../clients/1/makelsan-ups.html'><img src="../../../upload/images/c47cfa51567847a1811c246106dea9e3.png" alt="MAKELSAN UPS"></a></div>                                                     
+                        
+                            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href='../../clients/2/socomec-ups.html'><img src="../../../upload/images/58ed44cfed9e42b7bf00aa22fbec2747.png" alt="SOCOMEC UPS"></a></div>                                                     
+                        
+                            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href='../../clients/3/index.html'><img src="../../../upload/images/5779088228614f7c8991f8dfe0d86ebc.png" alt=""></a></div>                                                     
+                        
+                            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href='../../clients/4/index.html'><img src="../../../upload/images/72b84aa9319b4248ab77182b674535ee.png" alt=""></a></div>                                                     
+                        
+                            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href='../../clients/5/index.html'><img src="../../../upload/images/ab8f54a1fc99418a9f228e2c845a02c4.jpg" alt=""></a></div>                                                     
+                        
+                            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href='../../clients/6/index.html'><img src="../../../upload/images/daccf732a1654352ab95535811f24c74.png" alt=""></a></div>                                                     
+                        
+                            <div class="col-lg-1 col-md-1 col-sm-3 col-xs-6"><a href='../../clients/7/index.html'><img src="../../../upload/images/4c5772ee3eda4ff8acefa80aa5b52122.jpg" alt=""></a></div>                                                     
+                        
+					
+				</div>
+			</div>
+	    </div>
+	    <!-- End Our Clients -->
+
+
+
+ 
+
+
+	    <!-- Footer -->
+	    <div class="footer">
+
+
+        
+        <div class="fast-contact">Пишите нам</div>		
+
+        <div class="main-contact-form">                                       
+
+                <span class="contact-close">X</span>
+                <div class="contact-form-wrapper">
+		            <div class="form-horizontal" role="form">                                                
+
+				        <div class="form-group">
+					        <label for="contact-name" class="col-sm-3 control-label"><b>Имя , Фамилия</b></label>
+					        <div class="col-sm-9">
+						        <input class="form-control" id="contact-name" type="text" placeholder="">
+					        </div>
+				        </div>                        
+
+				        <div class="form-group">
+					        <label for="contact-email" class="col-sm-3 control-label"><b>Е-почта</b></label>
+					        <div class="col-sm-9">
+						        <input class="form-control" id="contact-email" type="text" placeholder="">
+					        </div>
+				        </div>
+
+				        <div class="form-group">
+					        <label for="contact-message" class="col-sm-3 control-label"><b>Текст</b></label>
+					        <div class="col-sm-9">
+						        <textarea class="form-control" rows="5" id="contact-message"></textarea>
+					        </div>
+				        </div>
+				        <div class="form-group">
+                            <label class="col-sm-6 control-label cformRes" style="text-align:right"></label>
+					        <div class="col-sm-6">
+						        <button type="submit" class="btn pull-right">Отправить</button>
+					        </div>
+				        </div>
+		            </div>
+		         </div>
+         </div>
+
+
+	    	<div class="container">
+		    	<div class="row">
+		    		
+		    		<div class="col-footer col-md-4 col-xs-6">
+		    			<h3>Контакты</h3>
+		    			<p class="contact-us-details">
+	        				<b>Адрес:</b> г. Баку , Нобелевский проспект - 23, 7-oй этаж. <br/>
+	        				<b>Телефон:</b> +994 50 220 80 61<br/>	        				
+	        				<b>e-почта:</b>  zuvand@mail.ru
+service.zuvand@gmail.com
+info@zuvand.az
+	        			</p>
+		    		</div>
+		    		<div class="col-footer support-footer col-md-2 col-xs-6">
+		    			<h2>Cпросите у нас</h2>
+                        <span class="work-time"></span>
+                        <div class="sup-fot-item">          
+                            <span class="sfi-left"> Рабочие время : </span>
+                            <span class="sfi-right"> +994 12 598 85 17 </span>
+                        </div>
+                          
+                        <div class="sup-fot-item">
+                            <span class="sfi-left"> После рабочие время  :</span>
+                            <span class="sfi-right"> 
+                                +994 50 220 80 61  <br/>
+		                        +994 50 569 51 88 <br/>
+			                    +994 50 744 74 14 <br/>
+                            </span>
+                        </div>
+                                                   
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<div class="col-md-12">
+		    			<div class="footer-copyright"> © 2016 zuvand.com  |  Все права защищены </div>
+		    		</div>
+		    	</div>
+		    </div>
+	    </div>
+
+
+        <!-- Javascripts -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../../js/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+        <script src="../../../js/jquery.fitvids.js"></script>
+        <script src="../../../js/jquery.sequence-min.js"></script>
+        <script src="../../../js/jquery.bxslider.js"></script>
+        <script src="../../../js/main-menu.js"></script>
+        <script src="../../../js/template.js"></script>        
+    
+    
+        <script>
+            var lang = "ru";
+        </script>
+        
+    <script src="../../../frontend/fancybox/jquery.fancybox.js"></script> 
+    <script src="../../../js/custom.js"></script> 
+    
+</form>
+
+</body>
+
+</html>

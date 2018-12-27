@@ -1,0 +1,493 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_MasterHead"><link rel="shortcut icon" href="../../../favicon.ico" />
+<meta charset="utf-8" /><link rel="shortcut icon" href="../../../img/logo.png" /><meta name="author" content="Nasir@MHM" /><meta name="robots" content="index, follow" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="stylesheet" href="../../../css/bootstrap.min.css" /><link rel="stylesheet" href="../../../css/icomoon-social.css" /><link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800" rel="stylesheet" type="text/css" />
+
+    
+    <!--START CSS--> 
+    <link rel="stylesheet" href="../../../css/leaflet.css" /><link rel="stylesheet" href="../../../css/main.css" />
+    
+
+    <!--[if lt IE 9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+    <![endif]-->  
+    
+<meta name="description" content="• Yüksek Frekans Double Conversion &quot;On-Line&quot; Teknoloji
+ • Gerçek Sinüs Dalga Çıkışlı
+ • Mikroişlemci Kontrollü" /><meta name="keywords" content="" /><meta name="description" content="" /><meta name="keywords" content="" /><title>
+	ZUVAND
+</title></head>
+
+
+<body>
+
+<div class="all-site">
+
+<div id="fb-root"></div>
+
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=644924598860420";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<script>!function (d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id))
+    { js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); }
+}
+(document, "script", "twitter-wjs");
+</script>
+
+
+<form name="aspnetForm" method="post" action="index.html" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNDM3OTc1NTU5D2QWAmYPZBYCAgMPZBYkAgYPFgIeBFRleHQFrQE8dWwgY2xhc3M9ImxhbmciPjxsaT48YSBjbGFzcz0iYWN0aXZlIiBocmVmPSIvYXovcHJvZHVjdHMvMS8iPmF6PC9hPjwvbGk+PGxpPjxhIGNsYXNzPSIiIGhyZWY9Ii9ydS9wcm9kdWN0cy8xLyI+cnU8L2E+PC9saT48bGk+PGEgY2xhc3M9IiIgaHJlZj0iL2VuL3Byb2R1Y3RzLzEvIj5lbjwvYT48L2xpPmQCBw9kFgYCAQ8WAh8ABRdNRU1PLVMgU0VSxLBTxLAgMS0zIGtWQWQCAw8WAh8ABV08aW1nIGFsdD0iTUVNTy1TIFNFUsSwU8SwIDEtMyBrVkEiIHNyYz0iL3VwbG9hZC9pbWFnZXMvMTQxNGNmN2M5NjFiNDk3NmE5NzNmNzllNTJmMWExOTIuanBnIj5kAgUPFgIfAAWoNzxwPiZuYnNwOzwvcD4NCg0KPHRhYmxlIGJvcmRlcj0iMCIgY2VsbHBhZGRpbmc9IjAiIGNlbGxzcGFjaW5nPSIwIiBzdHlsZT0id2lkdGg6NzMwcHgiPg0KCTx0Ym9keT4NCgkJPHRyPg0KCQkJPHRkPiZuYnNwOzwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+PHN0cm9uZz5Nb2RlbDwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+Jm5ic3A7PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSIyIj4mbmJzcDs8L3RkPg0KCQkJPHRkIGNvbHNwYW49IjIiPiZuYnNwOzwvdGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZD4mbmJzcDs8L3RkPg0KCQkJPHRkIGNvbHNwYW49IjIiPjxzdHJvbmc+S2FwYXNpdGU8L3N0cm9uZz48L3RkPg0KCQkJPHRkIGNvbHNwYW49IjIiPjFrVkEgLyA3MDBXPC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSIyIj4ya1ZBIC8gMTQwMFc8L3RkPg0KCQkJPHRkIGNvbHNwYW49IjIiPjNrVkEgLyAyMTAwVzwvdGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZD4mbmJzcDs8L3RkPg0KCQkJPHRkIGNvbHNwYW49IjIiPjxzdHJvbmc+R2lyacWfPC9zdHJvbmc+PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSI2Ij4mbmJzcDs8L3RkPg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQ+Jm5ic3A7PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSIyIj48c3Ryb25nPkZhejwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iNiI+MSBGYXogJmFtcDsgTiZvdW1sO3RyPC90ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRkPiZuYnNwOzwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+PHN0cm9uZz5Wb2x0YWo8L3N0cm9uZz48L3RkPg0KCQkJPHRkIGNvbHNwYW49IjYiPjIyMFZBQzwvdGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZD4mbmJzcDs8L3RkPg0KCQkJPHRkIGNvbHNwYW49IjIiPjxzdHJvbmc+Vm9sdGFqIEFyYWzEscSfxLE8L3N0cm9uZz48L3RkPg0KCQkJPHRkIGNvbHNwYW49IjYiPjExNVZBQy0yOTVWQUM8L3RkPg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQ+Jm5ic3A7PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSIyIj48c3Ryb25nPkZyZWthbnM8L3N0cm9uZz48L3RkPg0KCQkJPHRkIGNvbHNwYW49IjYiPjQ1fjU1SHogdmV5YSA1NX42NUh6JnBsdXNtbjswLDVIeiBPdG9tYXRpayBBbGfEsWxhbWE8L3RkPg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQ+Jm5ic3A7PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSIyIj48c3Ryb25nPkcmdXVtbDsmY2NlZGlsOyBGYWt0Jm91bWw7ciZ1dW1sOzwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iNiI+JmdlOzAsOTg8L3RkPg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQ+Jm5ic3A7PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSIyIj48c3Ryb25nPkJ5cGFzcyBWb2x0YWrEsTwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iNiI+MTg2VkFDLTI1MlZBQzwvdGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZD4mbmJzcDs8L3RkPg0KCQkJPHRkIGNvbHNwYW49IjIiPjxzdHJvbmc+SGFybW9uaWsgRGlzdG9yc2l5b24gKFRIRGkpPC9zdHJvbmc+PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSI2Ij4mbGU7JTMgKERvxJ9ydXNhbCBZJnV1bWw7a3RlKSwgJmxlOyU3IChEb8SfcnVzYWwgT2xtYXlhbiBZJnV1bWw7a3RlKTwvdGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZD4mbmJzcDs8L3RkPg0KCQkJPHRkIGNvbHNwYW49IjIiPjxzdHJvbmc+JkNjZWRpbDvEsWvEscWfPC9zdHJvbmc+PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSI2Ij4mbmJzcDs8L3RkPg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQ+Jm5ic3A7PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSIyIj48c3Ryb25nPkZhejwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iNiI+MSBGYXogJmFtcDsgTiZvdW1sO3RyPC90ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRkPiZuYnNwOzwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+PHN0cm9uZz5Wb2x0YWo8L3N0cm9uZz48L3RkPg0KCQkJPHRkIGNvbHNwYW49IjYiPjIwMC8yMDgvMjIwLzIzMC8yNDBWQUMgKE9wc2l5b25lbCk8L3RkPg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQ+Jm5ic3A7PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSIyIj48c3Ryb25nPkcmdXVtbDsmY2NlZGlsOyBGYWt0Jm91bWw7ciZ1dW1sOzwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iNiI+MCw3ICgwLDgtMCw5IE9wc2l5b25lbCk8L3RkPg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQ+Jm5ic3A7PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSIyIj48c3Ryb25nPlZvbHRhaiBLYXJhcmzEsWzEscSfxLE8L3N0cm9uZz48L3RkPg0KCQkJPHRkIGNvbHNwYW49IjYiPiZwbHVzbW47JSAwLDI8L3RkPg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQgcm93c3Bhbj0iMiI+Jm5ic3A7PC90ZD4NCgkJCTx0ZCByb3dzcGFuPSIyIj48c3Ryb25nPiZDY2VkaWw7xLFrxLHFnyBGcmVrYW5zxLE8L3N0cm9uZz48L3RkPg0KCQkJPHRkPjxzdHJvbmc+Tm9ybWFsIE1vZDwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iNiI+xZ5lYmVrZXlpIFRha2lwIEVkZXI8L3RkPg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQ+PHN0cm9uZz5BayZ1dW1sOyBNb2Q8L3N0cm9uZz48L3RkPg0KCQkJPHRkIGNvbHNwYW49IjYiPig1MC82MCZwbHVzbW47MCwyKUh6PC90ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRkPiZuYnNwOzwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+PHN0cm9uZz5DcmVzdCBGYWt0Jm91bWw7ciZ1dW1sOzwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iNiI+MzoxPC90ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRkPiZuYnNwOzwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+PHN0cm9uZz5UcmFuc2ZlciBTJnV1bWw7cmVzaTwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iNiI+KMWeZWJla2UgJmx0Oy0mZ3Q7IEFrJnV1bWw7KT0wbXMgKMWeZWJla2UgJmx0Oy0mZ3Q7QWsmdXVtbDspJmx0OzRtczwvdGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZCByb3dzcGFuPSI0Ij4mbmJzcDs8L3RkPg0KCQkJPHRkIHJvd3NwYW49IjQiPjxzdHJvbmc+QcWfxLFyxLEgWSZ1dW1sO2sgS2FwYXNpdGVzaTwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgcm93c3Bhbj0iMiI+PHN0cm9uZz5BayZ1dW1sOyBNb2Q8L3N0cm9uZz48L3RkPg0KCQkJPHRkIGNvbHNwYW49IjYiPiUxMDgmcGx1c21uOyU1Jmx0O1kmdXVtbDtrJmxlOyUxNTAmcGx1c21uOyU1IEHFn3TEscSfxLFuZGEgMzAgc24uLCAmQ2NlZGlsO8Sxa8SxxZ/EsSBLZXNlciB2ZSBBbGFybSB2ZXJpci48L3RkPg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQgY29sc3Bhbj0iNiI+MTUwJnBsdXNtbjslNSAmbHQ7WSZ1dW1sO2smbHQ7JTIwMCZwbHVzbW47JTUgQcWfdMSxxJ/EsW5kYSAzMDAgbXMuLCAmQ2NlZGlsO8Sxa8SxxZ/EsSBLZXNlciB2ZSBBbHJtIHZlcmlyPC90ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRkIHJvd3NwYW49IjIiPjxzdHJvbmc+Tm9ybWFsIE1vZDwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iNiI+JTEwOCZwbHVzbW47JTUmbHQ7WSZ1dW1sO2smbGU7JTE1MCZwbHVzbW47JTUgQcWfdMSxxJ/EsW5kYSAzMHNuLiwgQnktcGFzcyYjMzk7YSBHZSZjY2VkaWw7ZXIgdmUgQWxhcm0gVmVyaXIuPC90ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRkIGNvbHNwYW49IjYiPjE1MCZwbHVzbW47JTUgJmx0O1kmdXVtbDtrJmx0OyUyMDAmcGx1c21uOyU1IEHFn3TEscSfxLFuZGEgMzAwbXMsIEJ5LXBhc3MmIzM5O2EgR2UmY2NlZGlsO2VyIHZlIEFsYXJtIFZlcmlyLjwvdGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZD4mbmJzcDs8L3RkPg0KCQkJPHRkPjxzdHJvbmc+VmVyaW08L3N0cm9uZz48L3RkPg0KCQkJPHRkPjxzdHJvbmc+T25saW5lIE1vZDwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iNiI+JTg2PC90ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRkPiZuYnNwOzwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+PHN0cm9uZz5IYXJtb25payBEaXN0b3JzaXlvbiAoVEhEdik8L3N0cm9uZz48L3RkPg0KCQkJPHRkIGNvbHNwYW49IjYiPiZsZTslNSAoRG/En3J1c2FsIE9sbWF5YW4gWSZ1dW1sO2t0ZSk8L3RkPg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQ+Jm5ic3A7PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSIyIj48c3Ryb25nPkFrJnV1bWw7PC9zdHJvbmc+PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSI2Ij4mbmJzcDs8L3RkPg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQ+Jm5ic3A7PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSIyIj48c3Ryb25nPlZvbHRhajwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+MjRWREM8L3RkPg0KCQkJPHRkIGNvbHNwYW49IjIiPjQ4VkRDPC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSIyIj43MlZEQzwvdGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZD4mbmJzcDs8L3RkPg0KCQkJPHRkIGNvbHNwYW49IjIiPjxzdHJvbmc+QWsmdXVtbDsgS29uZmlnJnV1bWw7cmFzeW9udTwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+MngxMlYvN0FIPC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSIyIj40eDEyVi83QUg8L3RkPg0KCQkJPHRkIGNvbHNwYW49IjIiPjZ4MTJWLzdBSDwvdGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZD4mbmJzcDs8L3RkPg0KCQkJPHRkIGNvbHNwYW49IjIiPjxzdHJvbmc+QWsmdXVtbDsgVGlwaTwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iNiI+MTJWLzdBSCAoU3RhbmRhcnQpPC90ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRkPiZuYnNwOzwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+PHN0cm9uZz5EZXN0ZWtsZW1lIFMmdXVtbDtyZXNpPC9zdHJvbmc+PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSI2Ij4lNTAgeSZ1dW1sO2sgJmdlOyA1IGRrLiAoU3RhbmRhcnQpLCBVenVuIFMmdXVtbDtyZWxpIERlc3Rla2xlbWUgxLAmY2NlZGlsO2luIEVrc3RyYSBBayZ1dW1sOyBLYWJpbmxpZGlyLjwvdGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZD4mbmJzcDs8L3RkPg0KCQkJPHRkIGNvbHNwYW49IjIiPjxzdHJvbmc+xZ5hcmogQWvEsW3EsSAoQW1wZXIpPC9zdHJvbmc+PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSI2Ij4xQSA0QS03LDVBPC90ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRkPiZuYnNwOzwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+PHN0cm9uZz7EsGxldGnFn2ltPC9zdHJvbmc+PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSI2Ij5SUzIzMi4gT3BzaXlvbmVsIE9sYXJhazsgVVNCIFBvcnQsIFVTQiBLYXJ0xLEsIFNOTVAgS2FydMSxLCBLdXJ1IEtvbnRhayBLYXJ0xLE8L3RkPg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQ+Jm5ic3A7PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSIyIj48c3Ryb25nPiZDY2VkaWw7YWzEscWfbWEgxZ5hcnRsYXLEsTwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iNiI+Jm5ic3A7PC90ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRkPiZuYnNwOzwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+PHN0cm9uZz5TxLFjYWtsxLFrPC9zdHJvbmc+PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSI2Ij4wfjQwJmRlZztDPC90ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRkPiZuYnNwOzwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+PHN0cm9uZz5CYcSfxLFsIE5lbTwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iNiI+JTB+JTk1IChZb8SfdW5sYcWfbWF5YW4pPC90ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRkPiZuYnNwOzwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+PHN0cm9uZz5ZJnV1bWw7a3Nla2xpazwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iNiI+Jmx0OzE1MDBtPC90ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRkPiZuYnNwOzwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+PHN0cm9uZz5EZXBvbGFtYSBTxLFjYWtsxLHEn8SxPC9zdHJvbmc+PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSI2Ij4tMjUmZGVnO0MgfiArNTUmZGVnO0M8L3RkPg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQ+Jm5ic3A7PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSIyIj48c3Ryb25nPiZDY2VkaWw7YWzEscWfbWEgWSZ1dW1sO2tzZWtsacSfaTwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iNiI+Jmx0OzE1MDBtPC90ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRkPiZuYnNwOzwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+PHN0cm9uZz5EacSfZXI8L3N0cm9uZz48L3RkPg0KCQkJPHRkIGNvbHNwYW49IjYiPiZuYnNwOzwvdGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZD4mbmJzcDs8L3RkPg0KCQkJPHRkIGNvbHNwYW49IjIiPjxzdHJvbmc+Qm95dXQgKEcgeCBEIHggWSkgKG1tKTwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+MTQ0IHggMzYxIHggMjE1PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSI0Ij4xOTEgeCA0MjggeCAzMzc8L3RkPg0KCQk8L3RyPg0KCQk8dHI+DQoJCQk8dGQgcm93c3Bhbj0iMiI+Jm5ic3A7PC90ZD4NCgkJCTx0ZCBjb2xzcGFuPSIyIiByb3dzcGFuPSIyIj48c3Ryb25nPkHEn8SxcmzEsWsgKGtnKTwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQ+MTAsMi8xMTwvdGQ+DQoJCQk8dGQ+NSwyLzY8L3RkPg0KCQkJPHRkPjE5LDUvMjEsMTwvdGQ+DQoJCQk8dGQ+OSw1LzExLDE8L3RkPg0KCQkJPHRkPjI0LzI1LDY8L3RkPg0KCQkJPHRkPjksNy8xMSwzPC90ZD4NCgkJPC90cj4NCgkJPHRyPg0KCQkJPHRkIGNvbHNwYW49IjIiPjEyLzE0LDU8L3RkPg0KCQkJPHRkIGNvbHNwYW49IjIiPjIxLDUvMjQsNTwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iMiI+MjYvMjgsODwvdGQ+DQoJCTwvdHI+DQoJCTx0cj4NCgkJCTx0ZD4mbmJzcDs8L3RkPg0KCQkJPHRkIGNvbHNwYW49IjIiPjxzdHJvbmc+RW5kJnV1bWw7cnRyaXllbCBTdGFuZGFydGxhcjwvc3Ryb25nPjwvdGQ+DQoJCQk8dGQgY29sc3Bhbj0iNiI+SUVDL0VONjIwNDAtMjtJRUM2MTAwMC00LTI7SUVDNjEwMDAtNC0zO0lFQzYxMDAwLTQtNDsgSUVDNjEwMDAtNC01O0lFQzYxMDAwLTQtNjtJRUM2MTAwMC00LTg7SUVDL0VONjIwNDAtMTtJRUMvRU42MDk1MC0xPC90ZD4NCgkJPC90cj4NCgk8L3Rib2R5Pg0KPC90YWJsZT4NCmQCDQ8WAh8ABQfGj2xhccmZZAIODxYCHwAFBsOcbnZhbmQCDw8WAh8ABTZCYWvEsSDFn8mZaMmZcmksIE5vYmVsIHByb3NwZWt0aSAtIDIzLCA3LWNpIG3JmXJ0yZliyZlkAhAPFgIfAAUHVGVsZWZvbmQCEQ8WAh8ABRErOTk0IDUwIDIyMCA4MCA2MWQCEg8WAh8ABQZlLW1haWxkAhMPFgIfAAVJenV2YW5kQG1haWwucnUNCiAgc2VydmljZS56dXZhbmRAZ21haWwuY29tDQogICAgICAgICAgICAgICBpbmZvQHp1dmFuZC5hemQCFA8WAh8ABRBCaXpkyZluIHNvcnXFn3VuZAIVDxYCHwAFC8SwxZ8gdmF4dMSxZAIWDxYCHwAFESs5OTQgMTIgNTk4IDg1IDE3ZAIXDxYCHwAFFMSwxZ8gdmF4dMSxIHNvbnJhc8SxZAIYDxYCHwAFESs5OTQgNTAgMjIwIDgwIDYxZAIZDxYCHwAFESs5OTQgNTAgNTY5IDUxIDg4ZAIaDxYCHwAFESs5OTQgNTAgNzQ0IDc0IDE0ZAIbDxYCHwAFCnp1dmFuZC5jb21kAhwPFgIfAAUbQsO8dMO8biBow7xxdXFsYXLEsSBxb3J1bnVyZGSmCHi2vleXInhqyrkrKGQ1folOoQEZuQ87w5JjK3WMXA==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="29B971F1" />
+
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        
+
+        <!-- Navigation & Logo-->
+        <div class="mainmenu-wrapper">
+	        <div class="container">
+
+		        <nav id="mainmenu" class="mainmenu">
+					<ul>
+						<li class="logo-wrapper"><a href="../../../index.html"><img src="../../../Pics/logo.png" alt="Zuvand"></a></li>                                               
+
+						<li id="mhome"><a href="../../../index.html"> ƏSAS SƏHİFƏ </a></li>
+						<li id="mproducts"><a href="../../product/list/index.html">MƏHSULLAR  </a></li>
+						<li id="mservices"><a href="../../pages/2/services.html"> XİDMƏTLƏR </a></li>
+						<li id="mdownloads"><a href="../../downloads/1/index.html">YÜKLƏNMƏLƏR </a></li>
+                        <li id="mabout"><a href="../../pages/1/about.html">HAQQIMIZDA </a></li>
+                        <li id="mcontact"><a href="../../contact/index.html">ƏLAQƏ </a></li>
+
+					</ul>
+				</nav>
+
+                
+                <ul class="lang"><li><a class="active" href="index.html">az</a></li><li><a class="" href="../../../ru/products/1/index.html">ru</a></li><li><a class="" href="../../../en/products/1/index.html">en</a></li>
+                 
+
+			</div>
+		</div>
+        
+        
+
+
+           <script> window.onload = function () { $('#mproducts').addClass('active'); }  </script>
+
+           <div class="section">
+               <div class="container">
+
+                   <article>
+                          <div class="blog-post blog-single-post">
+							        <div class="single-post-title">
+								        <h3>MEMO-S SERİSİ 1-3 kVA</h3>
+							        </div>
+                                   <div>
+
+							            <div class="single-post-content">
+							                <div class="single-post-image">
+								                <img alt="MEMO-S SERİSİ 1-3 kVA" src="../../../upload/images/1414cf7c961b4976a973f79e52f1a192.jpg">
+							                </div>
+                                            <p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0" style="width:730px">
+	<tbody>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Model</strong></td>
+			<td colspan="2">&nbsp;</td>
+			<td colspan="2">&nbsp;</td>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Kapasite</strong></td>
+			<td colspan="2">1kVA / 700W</td>
+			<td colspan="2">2kVA / 1400W</td>
+			<td colspan="2">3kVA / 2100W</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Giriş</strong></td>
+			<td colspan="6">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Faz</strong></td>
+			<td colspan="6">1 Faz &amp; N&ouml;tr</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Voltaj</strong></td>
+			<td colspan="6">220VAC</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Voltaj Aralığı</strong></td>
+			<td colspan="6">115VAC-295VAC</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Frekans</strong></td>
+			<td colspan="6">45~55Hz veya 55~65Hz&plusmn;0,5Hz Otomatik Algılama</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>G&uuml;&ccedil; Fakt&ouml;r&uuml;</strong></td>
+			<td colspan="6">&ge;0,98</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Bypass Voltajı</strong></td>
+			<td colspan="6">186VAC-252VAC</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Harmonik Distorsiyon (THDi)</strong></td>
+			<td colspan="6">&le;%3 (Doğrusal Y&uuml;kte), &le;%7 (Doğrusal Olmayan Y&uuml;kte)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>&Ccedil;ıkış</strong></td>
+			<td colspan="6">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Faz</strong></td>
+			<td colspan="6">1 Faz &amp; N&ouml;tr</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Voltaj</strong></td>
+			<td colspan="6">200/208/220/230/240VAC (Opsiyonel)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>G&uuml;&ccedil; Fakt&ouml;r&uuml;</strong></td>
+			<td colspan="6">0,7 (0,8-0,9 Opsiyonel)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Voltaj Kararlılığı</strong></td>
+			<td colspan="6">&plusmn;% 0,2</td>
+		</tr>
+		<tr>
+			<td rowspan="2">&nbsp;</td>
+			<td rowspan="2"><strong>&Ccedil;ıkış Frekansı</strong></td>
+			<td><strong>Normal Mod</strong></td>
+			<td colspan="6">Şebekeyi Takip Eder</td>
+		</tr>
+		<tr>
+			<td><strong>Ak&uuml; Mod</strong></td>
+			<td colspan="6">(50/60&plusmn;0,2)Hz</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Crest Fakt&ouml;r&uuml;</strong></td>
+			<td colspan="6">3:1</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Transfer S&uuml;resi</strong></td>
+			<td colspan="6">(Şebeke &lt;-&gt; Ak&uuml;)=0ms (Şebeke &lt;-&gt;Ak&uuml;)&lt;4ms</td>
+		</tr>
+		<tr>
+			<td rowspan="4">&nbsp;</td>
+			<td rowspan="4"><strong>Aşırı Y&uuml;k Kapasitesi</strong></td>
+			<td rowspan="2"><strong>Ak&uuml; Mod</strong></td>
+			<td colspan="6">%108&plusmn;%5&lt;Y&uuml;k&le;%150&plusmn;%5 Aştığında 30 sn., &Ccedil;ıkışı Keser ve Alarm verir.</td>
+		</tr>
+		<tr>
+			<td colspan="6">150&plusmn;%5 &lt;Y&uuml;k&lt;%200&plusmn;%5 Aştığında 300 ms., &Ccedil;ıkışı Keser ve Alrm verir</td>
+		</tr>
+		<tr>
+			<td rowspan="2"><strong>Normal Mod</strong></td>
+			<td colspan="6">%108&plusmn;%5&lt;Y&uuml;k&le;%150&plusmn;%5 Aştığında 30sn., By-pass&#39;a Ge&ccedil;er ve Alarm Verir.</td>
+		</tr>
+		<tr>
+			<td colspan="6">150&plusmn;%5 &lt;Y&uuml;k&lt;%200&plusmn;%5 Aştığında 300ms, By-pass&#39;a Ge&ccedil;er ve Alarm Verir.</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td><strong>Verim</strong></td>
+			<td><strong>Online Mod</strong></td>
+			<td colspan="6">%86</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Harmonik Distorsiyon (THDv)</strong></td>
+			<td colspan="6">&le;%5 (Doğrusal Olmayan Y&uuml;kte)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Ak&uuml;</strong></td>
+			<td colspan="6">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Voltaj</strong></td>
+			<td colspan="2">24VDC</td>
+			<td colspan="2">48VDC</td>
+			<td colspan="2">72VDC</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Ak&uuml; Konfig&uuml;rasyonu</strong></td>
+			<td colspan="2">2x12V/7AH</td>
+			<td colspan="2">4x12V/7AH</td>
+			<td colspan="2">6x12V/7AH</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Ak&uuml; Tipi</strong></td>
+			<td colspan="6">12V/7AH (Standart)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Destekleme S&uuml;resi</strong></td>
+			<td colspan="6">%50 y&uuml;k &ge; 5 dk. (Standart), Uzun S&uuml;reli Destekleme İ&ccedil;in Ekstra Ak&uuml; Kabinlidir.</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Şarj Akımı (Amper)</strong></td>
+			<td colspan="6">1A 4A-7,5A</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>İletişim</strong></td>
+			<td colspan="6">RS232. Opsiyonel Olarak; USB Port, USB Kartı, SNMP Kartı, Kuru Kontak Kartı</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>&Ccedil;alışma Şartları</strong></td>
+			<td colspan="6">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Sıcaklık</strong></td>
+			<td colspan="6">0~40&deg;C</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Bağıl Nem</strong></td>
+			<td colspan="6">%0~%95 (Yoğunlaşmayan)</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Y&uuml;kseklik</strong></td>
+			<td colspan="6">&lt;1500m</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Depolama Sıcaklığı</strong></td>
+			<td colspan="6">-25&deg;C ~ +55&deg;C</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>&Ccedil;alışma Y&uuml;ksekliği</strong></td>
+			<td colspan="6">&lt;1500m</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Diğer</strong></td>
+			<td colspan="6">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>Boyut (G x D x Y) (mm)</strong></td>
+			<td colspan="2">144 x 361 x 215</td>
+			<td colspan="4">191 x 428 x 337</td>
+		</tr>
+		<tr>
+			<td rowspan="2">&nbsp;</td>
+			<td colspan="2" rowspan="2"><strong>Ağırlık (kg)</strong></td>
+			<td>10,2/11</td>
+			<td>5,2/6</td>
+			<td>19,5/21,1</td>
+			<td>9,5/11,1</td>
+			<td>24/25,6</td>
+			<td>9,7/11,3</td>
+		</tr>
+		<tr>
+			<td colspan="2">12/14,5</td>
+			<td colspan="2">21,5/24,5</td>
+			<td colspan="2">26/28,8</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td colspan="2"><strong>End&uuml;rtriyel Standartlar</strong></td>
+			<td colspan="6">IEC/EN62040-2;IEC61000-4-2;IEC61000-4-3;IEC61000-4-4; IEC61000-4-5;IEC61000-4-6;IEC61000-4-8;IEC/EN62040-1;IEC/EN60950-1</td>
+		</tr>
+	</tbody>
+</table>
+
+                                            <div style="clear:both"></div>
+
+							            </div>     
+                                       
+
+                                            <div class="soc-items clearfix">
+
+                                                <div class="share"><div class="fb-share-button"  data-type="button_count"></div></div>
+
+                                                <div class="share"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a></div>
+
+                                                <div class="share" >
+                                                    <!-- Place this tag in your head or just before your close body tag. -->
+                                                    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+                                                    <!-- Place this tag where you want the +1 button to render. -->
+                                                    <div class="g-plusone" data-size="medium"></div>
+
+                                                </div>
+
+                                            </div>                                                                          
+                                  </div>
+				          </div>
+                   </article>
+
+
+
+               </div>
+           </div>
+
+
+               
+               
+               
+
+              
+
+           
+       
+
+
+
+
+
+
+
+
+	    <!-- Footer -->
+	    <div class="footer">
+
+
+        
+        <div class="fast-contact">Bizə yazın</div>		
+
+        <div class="main-contact-form">                                       
+
+                <span class="contact-close">X</span>
+                <div class="contact-form-wrapper">
+		            <div class="form-horizontal" role="form">                                                
+
+				        <div class="form-group">
+					        <label for="contact-name" class="col-sm-3 control-label"><b>Ad,Soyad</b></label>
+					        <div class="col-sm-9">
+						        <input class="form-control" id="contact-name" type="text" placeholder="">
+					        </div>
+				        </div>                        
+
+				        <div class="form-group">
+					        <label for="contact-email" class="col-sm-3 control-label"><b>E-mail</b></label>
+					        <div class="col-sm-9">
+						        <input class="form-control" id="contact-email" type="text" placeholder="">
+					        </div>
+				        </div>
+
+				        <div class="form-group">
+					        <label for="contact-message" class="col-sm-3 control-label"><b>Mətn</b></label>
+					        <div class="col-sm-9">
+						        <textarea class="form-control" rows="5" id="contact-message"></textarea>
+					        </div>
+				        </div>
+				        <div class="form-group">
+                            <label class="col-sm-6 control-label cformRes" style="text-align:right"></label>
+					        <div class="col-sm-6">
+						        <button type="submit" class="btn pull-right">Göndər</button>
+					        </div>
+				        </div>
+		            </div>
+		         </div>
+         </div>
+
+
+	    	<div class="container">
+		    	<div class="row">
+		    		
+		    		<div class="col-footer col-md-4 col-xs-6">
+		    			<h3>Əlaqə</h3>
+		    			<p class="contact-us-details">
+	        				<b>Ünvan:</b> Bakı şəhəri, Nobel prospekti - 23, 7-ci mərtəbə <br/>
+	        				<b>Telefon:</b> +994 50 220 80 61<br/>	        				
+	        				<b>e-mail:</b>  zuvand@mail.ru
+  service.zuvand@gmail.com
+               info@zuvand.az
+	        			</p>
+		    		</div>
+		    		<div class="col-footer support-footer col-md-2 col-xs-6">
+		    			<h2>Bizdən soruşun</h2>
+                        <span class="work-time"></span>
+                        <div class="sup-fot-item">          
+                            <span class="sfi-left"> İş vaxtı : </span>
+                            <span class="sfi-right"> +994 12 598 85 17 </span>
+                        </div>
+                          
+                        <div class="sup-fot-item">
+                            <span class="sfi-left"> İş vaxtı sonrası  :</span>
+                            <span class="sfi-right"> 
+                                +994 50 220 80 61  <br/>
+		                        +994 50 569 51 88 <br/>
+			                    +994 50 744 74 14 <br/>
+                            </span>
+                        </div>
+                                                   
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<div class="col-md-12">
+		    			<div class="footer-copyright"> © 2016 zuvand.com  |  Bütün hüquqları qorunur </div>
+		    		</div>
+		    	</div>
+		    </div>
+	    </div>
+
+
+        <!-- Javascripts -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../../js/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+        <script src="../../../js/jquery.fitvids.js"></script>
+        <script src="../../../js/jquery.sequence-min.js"></script>
+        <script src="../../../js/jquery.bxslider.js"></script>
+        <script src="../../../js/main-menu.js"></script>
+        <script src="../../../js/template.js"></script>        
+    
+    
+        <script>
+            var lang = "az";
+        </script>
+        
+    <script src="../../../frontend/fancybox/jquery.fancybox.js"></script> 
+    <script src="../../../js/custom.js"></script> 
+    
+</form>
+
+</body>
+
+</html>

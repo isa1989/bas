@@ -1,0 +1,110 @@
+{% include 'header.html' %}
+{% load static %}
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+      <li data-target="#demo" data-slide-to="4"></li>
+      <li data-target="#demo" data-slide-to="5"></li>
+
+
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="{% static 'upload/images/20d137b124b54de591ca6ad9da6b85c5.png' %}" alt="">
+        <div class="carousel-caption">
+            <h3>SOCOMEC  slide</h3>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="{% static 'upload/images/32b775aa3e9a482ba5604a2c51ba2f94.jpg' %}" alt="">
+     <div class="carousel-caption">
+            <h3>MAKELSAN</h3>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="{% static 'upload/images/fe92a95dfc734ed8b0b2b0be19816d2d.jpg' %}" alt="">
+
+       <div class="carousel-caption">
+            <h3>AXIS</h3>
+        </div>
+        </div>
+
+      <div class="carousel-item">
+      <img src="{% static 'upload/images/4a703ca78b7448e0aef0747d8fbb8595.jpg'%}" alt="">
+         <div class="carousel-caption">
+            <h3>FLUKE</h3>
+        </div>
+          </div>
+
+      <div class="carousel-item">
+      <img src="{% static 'upload/images/b4eecc770d5d4e6d9cf6bd53dda79ccc.jpg'%}" alt="">
+           <div class="carousel-caption">
+            <h3>PTL SOLAR Sytem</h3>
+        </div>
+          </div>
+
+      <div class="carousel-item">
+      <img src="{% static 'upload/images/53f0a78ff28245c69a3bb7a601eb646a.jpg' %}" alt="">
+           <div class="carousel-caption">
+            <h3>MAKELSAN</h3>
+        </div>
+          </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .home-cat-wrapper {
+    background: #fff;
+    height: 55px;
+    border-bottom: 1px solid #ccc;
+}
+  </style>
+
+<div class="section home-cat-wrapper">
+	    	<div class="container">
+
+            <div class="search">
+                <input type="text" id="keyword" />
+                <button class="srcBtn"></button>
+            </div>
+
+              <ul class="home-categories">
+
+                           {% for brand in brands %} <li><a href='{{brand.get_absolute_url}}' alt=""/> {{brand.name}}</a></li>{% endfor%}
+
+              </ul>
+              <div class="social">
+                  <a target="_blank" href="https://www.youtube.com/"><img src="{% static '/Pics/ico2.png' %}"/></a>
+                  <a target="_blank" href="https://www.facebook.com/"><img src="{% static '/Pics/ico3.png'%}"/></a>
+              </div>
+
+	    	</div>
+        </div>
+
+{% include 'footer.html' %}

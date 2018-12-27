@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_MasterHead"><link rel="shortcut icon" href="../../../favicon.ico" />
+<meta charset="utf-8" /><link rel="shortcut icon" href="../../../img/logo.png" /><meta name="author" content="Nasir@MHM" /><meta name="robots" content="index, follow" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="stylesheet" href="../../../css/bootstrap.min.css" /><link rel="stylesheet" href="../../../css/icomoon-social.css" /><link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800" rel="stylesheet" type="text/css" />
+
+    
+    <!--START CSS--> 
+    <link rel="stylesheet" href="../../../css/leaflet.css" /><link rel="stylesheet" href="../../../css/main.css" />
+    
+
+    <!--[if lt IE 9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+    <![endif]-->  
+    
+<meta name="description" content=" Yükləmələr" /><meta name="keywords" content=" Yükləmələr" /><meta name="description" content="" /><meta name="keywords" content="" /><title>
+	ZUVAND
+</title></head>
+
+
+<body>
+
+<div class="all-site">
+
+<div id="fb-root"></div>
+
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=644924598860420";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<script>!function (d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id))
+    { js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); }
+}
+(document, "script", "twitter-wjs");
+</script>
+
+
+<form name="aspnetForm" method="post" action="index.html" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJODY0ODg2NTMxD2QWAmYPZBYCAgMPZBYkAgYPFgIeBFRleHQFsAE8dWwgY2xhc3M9ImxhbmciPjxsaT48YSBjbGFzcz0iYWN0aXZlIiBocmVmPSIvYXovZG93bmxvYWRzLzEvIj5hejwvYT48L2xpPjxsaT48YSBjbGFzcz0iIiBocmVmPSIvcnUvZG93bmxvYWRzLzEvIj5ydTwvYT48L2xpPjxsaT48YSBjbGFzcz0iIiBocmVmPSIvZW4vZG93bmxvYWRzLzEvIj5lbjwvYT48L2xpPmQCBw9kFgYCAQ8PFgYeC05hdmlnYXRlVXJsBRAvYXovZG93bmxvYWRzLzEvHghDc3NDbGFzcwUGYWN0aXZlHgRfIVNCAgJkZAIDDw8WAh8BBRAvYXovZG93bmxvYWRzLzIvZGQCBQ8WAh4LXyFJdGVtQ291bnQCAhYEZg9kFgJmDxUGbTxpbWcgYWx0PSJSQ0NNRCA6IDEgTGlzYW5zICgxIFNlcnZlciB2ZXlhIENsaWVudCkiIHNyYz0iL3VwbG9hZC9pbWFnZXMvOWQ3NjcyZmUwNjI0NGU2OTkyMjdhMzNlMjk3NDlhZWMuanBnIj4nUkNDTUQgOiAxIExpc2FucyAoMSBTZXJ2ZXIgdmV5YSBDbGllbnQpeTxwPiZDY2VkaWw7b2tsdSBTZXJ2ZXIgJmFtcDsgQ2xpZW50IFkmb3VtbDtuZXRpbSBQcm9ncmFtaSAoV2luZG93cyBYLCBVbml4LCBNYWMgWCwgVk1XYXJlLCBOb3ZlbGwsIElCTSBpJmNjZWRpbDtpbik8L3A+DQpePGEgaHJlZj0iL3VwbG9hZC9maWxlcy81MTU5NzExNjc5ZDM0ODM4YmJhMGI2Y2IyY2M5YWJjNi5yYXIiPiA8aW1nIHNyYz0iL1BpY3MvZmlsZS5wbmciLz4gPC9hPgAAZAIBD2QWAmYPFQZiPGltZyBhbHQ9IlVQU01BTiA6IDEgTGlzYW5zICgxIFNlcnZlcikiIHNyYz0iL3VwbG9hZC9pbWFnZXMvNDQ4ZDJkZTVkNDZmNGJmMzk4N2Y1NzJlNDVkY2UzYjIuanBnIj4cVVBTTUFOIDogMSBMaXNhbnMgKDEgU2VydmVyKW08cD5VcHMgVXpha3RhbiBJemxlbWUgdmUgWSZvdW1sO25ldGltIFByb2dyYW1pIChXaW5kb3dzIFggLCBVbml4LCBNYWMgWCBpc2xldGltIHNpc3RlbWxlcmkgaSZjY2VkaWw7aW4pPC9wPg0KXjxhIGhyZWY9Ii91cGxvYWQvZmlsZXMvNTE1OTcxMTY3OWQzNDgzOGJiYTBiNmNiMmNjOWFiYzYucmFyIj4gPGltZyBzcmM9Ii9QaWNzL2ZpbGUucG5nIi8+IDwvYT5ePGEgaHJlZj0iL3VwbG9hZC9maWxlcy9mMmIzZTNhNjhhNzE0YjY5OGM4NjM2YWNmZDE2NTRjOC5wZGYiPiA8aW1nIHNyYz0iL1BpY3MvZmlsZS5wbmciLz4gPC9hPl48YSBocmVmPSIvdXBsb2FkL2ZpbGVzLzMyN2UzNmYyOTc1MzQ4YmY4YThkNDYyMmY3OTY4ZmJkLnBkZiI+IDxpbWcgc3JjPSIvUGljcy9maWxlLnBuZyIvPiA8L2E+ZAINDxYCHwAFB8aPbGFxyZlkAg4PFgIfAAUGw5xudmFuZAIPDxYCHwAFNkJha8SxIMWfyZloyZlyaSwgTm9iZWwgcHJvc3Bla3RpIC0gMjMsIDctY2kgbcmZcnTJmWLJmWQCEA8WAh8ABQdUZWxlZm9uZAIRDxYCHwAFESs5OTQgNTAgMjIwIDgwIDYxZAISDxYCHwAFBmUtbWFpbGQCEw8WAh8ABUl6dXZhbmRAbWFpbC5ydQ0KICBzZXJ2aWNlLnp1dmFuZEBnbWFpbC5jb20NCiAgICAgICAgICAgICAgIGluZm9AenV2YW5kLmF6ZAIUDxYCHwAFEEJpemTJmW4gc29ydcWfdW5kAhUPFgIfAAULxLDFnyB2YXh0xLFkAhYPFgIfAAURKzk5NCAxMiA1OTggODUgMTdkAhcPFgIfAAUUxLDFnyB2YXh0xLEgc29ucmFzxLFkAhgPFgIfAAURKzk5NCA1MCAyMjAgODAgNjFkAhkPFgIfAAURKzk5NCA1MCA1NjkgNTEgODhkAhoPFgIfAAURKzk5NCA1MCA3NDQgNzQgMTRkAhsPFgIfAAUKenV2YW5kLmNvbWQCHA8WAh8ABRtCw7x0w7xuIGjDvHF1cWxhcsSxIHFvcnVudXJkZGGkg3MdTmpS8TE2Xz9xYc8YFnMojrMDsc863l0CcMOv" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BD4A2175" />
+
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        
+
+        <!-- Navigation & Logo-->
+        <div class="mainmenu-wrapper">
+	        <div class="container">
+
+		        <nav id="mainmenu" class="mainmenu">
+					<ul>
+						<li class="logo-wrapper"><a href="../../../index.html"><img src="../../../Pics/logo.png" alt="Zuvand"></a></li>                                               
+
+						<li id="mhome"><a href="../../../index.html"> ƏSAS SƏHİFƏ </a></li>
+						<li id="mproducts"><a href="../../product/list/index.html">MƏHSULLAR  </a></li>
+						<li id="mservices"><a href="../../pages/2/services.html"> XİDMƏTLƏR </a></li>
+						<li id="mdownloads"><a href="index.html">YÜKLƏNMƏLƏR </a></li>
+                        <li id="mabout"><a href="../../pages/1/about.html">HAQQIMIZDA </a></li>
+                        <li id="mcontact"><a href="../../contact/index.html">ƏLAQƏ </a></li>
+
+					</ul>
+				</nav>
+
+                
+                <ul class="lang"><li><a class="active" href="index.html">az</a></li><li><a class="" href="../../../ru/downloads/1/index.html">ru</a></li><li><a class="" href="../../../en/downloads/1/index.html">en</a></li>
+                 
+
+			</div>
+		</div>
+        
+        
+
+    <script> window.onload = function () { $('#mdownloads').addClass('active'); }  </script>
+
+           <div class="section">
+               <div class="container">
+
+                     <div class="col-sm-2 left-menu">
+                         <ul>
+                             <li><a id="ctl00_MainContent_DocType1" class="active" href="index.html">Proqramlar</a></li>
+                             <li><a id="ctl00_MainContent_DocType2" href="../2/index.html">Dokumentasiya</a></li>                                                                                                                        
+                         </ul>
+                     </div>
+
+                     <div class="col-sm-9 latest-news downloads">	        			
+
+                            
+                                     <div class="row service-wrapper-row">
+        			                    <div class="col-sm-3">
+        				                    <div class="service-image">
+        					                    <img alt="RCCMD : 1 Lisans (1 Server veya Client)" src="../../../upload/images/9d7672fe06244e699227a33e29749aec.jpg">
+        				                    </div>
+        			                    </div>
+        			                    <div class="col-sm-9">
+    					                    <h3>RCCMD : 1 Lisans (1 Server veya Client)</h3>
+    					                    <p>
+    						                    <p>&Ccedil;oklu Server &amp; Client Y&ouml;netim Programi (Windows X, Unix, Mac X, VMWare, Novell, IBM i&ccedil;in)</p>
+
+    					                    </p>
+                                            <p class="file-list"> 
+                                                  <a href="../../../upload/files/5159711679d34838bba0b6cb2cc9abc6.rar"> <img src="../../../Pics/file.png"/> </a>
+                                                  
+                                                  
+
+                                            </p>
+    				                    </div>
+				                    </div>                 
+                                
+                                     <div class="row service-wrapper-row">
+        			                    <div class="col-sm-3">
+        				                    <div class="service-image">
+        					                    <img alt="UPSMAN : 1 Lisans (1 Server)" src="../../../upload/images/448d2de5d46f4bf3987f572e45dce3b2.jpg">
+        				                    </div>
+        			                    </div>
+        			                    <div class="col-sm-9">
+    					                    <h3>UPSMAN : 1 Lisans (1 Server)</h3>
+    					                    <p>
+    						                    <p>Ups Uzaktan Izleme ve Y&ouml;netim Programi (Windows X , Unix, Mac X isletim sistemleri i&ccedil;in)</p>
+
+    					                    </p>
+                                            <p class="file-list"> 
+                                                  <a href="../../../upload/files/5159711679d34838bba0b6cb2cc9abc6.rar"> <img src="../../../Pics/file.png"/> </a>
+                                                  <a href="../../../upload/files/f2b3e3a68a714b698c8636acfd1654c8.pdf"> <img src="../../../Pics/file.png"/> </a>
+                                                  <a href="../../../upload/files/327e36f2975348bf8a8d4622f7968fbd.pdf"> <img src="../../../Pics/file.png"/> </a>
+
+                                            </p>
+    				                    </div>
+				                    </div>                 
+                                
+
+
+				
+	        		</div>
+
+
+
+               </div>
+           </div>
+
+
+
+
+
+
+	    <!-- Footer -->
+	    <div class="footer">
+
+
+        
+        <div class="fast-contact">Bizə yazın</div>		
+
+        <div class="main-contact-form">                                       
+
+                <span class="contact-close">X</span>
+                <div class="contact-form-wrapper">
+		            <div class="form-horizontal" role="form">                                                
+
+				        <div class="form-group">
+					        <label for="contact-name" class="col-sm-3 control-label"><b>Ad,Soyad</b></label>
+					        <div class="col-sm-9">
+						        <input class="form-control" id="contact-name" type="text" placeholder="">
+					        </div>
+				        </div>                        
+
+				        <div class="form-group">
+					        <label for="contact-email" class="col-sm-3 control-label"><b>E-mail</b></label>
+					        <div class="col-sm-9">
+						        <input class="form-control" id="contact-email" type="text" placeholder="">
+					        </div>
+				        </div>
+
+				        <div class="form-group">
+					        <label for="contact-message" class="col-sm-3 control-label"><b>Mətn</b></label>
+					        <div class="col-sm-9">
+						        <textarea class="form-control" rows="5" id="contact-message"></textarea>
+					        </div>
+				        </div>
+				        <div class="form-group">
+                            <label class="col-sm-6 control-label cformRes" style="text-align:right"></label>
+					        <div class="col-sm-6">
+						        <button type="submit" class="btn pull-right">Göndər</button>
+					        </div>
+				        </div>
+		            </div>
+		         </div>
+         </div>
+
+
+	    	<div class="container">
+		    	<div class="row">
+		    		
+		    		<div class="col-footer col-md-4 col-xs-6">
+		    			<h3>Əlaqə</h3>
+		    			<p class="contact-us-details">
+	        				<b>Ünvan:</b> Bakı şəhəri, Nobel prospekti - 23, 7-ci mərtəbə <br/>
+	        				<b>Telefon:</b> +994 50 220 80 61<br/>	        				
+	        				<b>e-mail:</b>  zuvand@mail.ru
+  service.zuvand@gmail.com
+               info@zuvand.az
+	        			</p>
+		    		</div>
+		    		<div class="col-footer support-footer col-md-2 col-xs-6">
+		    			<h2>Bizdən soruşun</h2>
+                        <span class="work-time"></span>
+                        <div class="sup-fot-item">          
+                            <span class="sfi-left"> İş vaxtı : </span>
+                            <span class="sfi-right"> +994 12 598 85 17 </span>
+                        </div>
+                          
+                        <div class="sup-fot-item">
+                            <span class="sfi-left"> İş vaxtı sonrası  :</span>
+                            <span class="sfi-right"> 
+                                +994 50 220 80 61  <br/>
+		                        +994 50 569 51 88 <br/>
+			                    +994 50 744 74 14 <br/>
+                            </span>
+                        </div>
+                                                   
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<div class="col-md-12">
+		    			<div class="footer-copyright"> © 2016 zuvand.com  |  Bütün hüquqları qorunur </div>
+		    		</div>
+		    	</div>
+		    </div>
+	    </div>
+
+
+        <!-- Javascripts -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../../js/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+        <script src="../../../js/jquery.fitvids.js"></script>
+        <script src="../../../js/jquery.sequence-min.js"></script>
+        <script src="../../../js/jquery.bxslider.js"></script>
+        <script src="../../../js/main-menu.js"></script>
+        <script src="../../../js/template.js"></script>        
+    
+    
+        <script>
+            var lang = "az";
+        </script>
+        
+    <script src="../../../frontend/fancybox/jquery.fancybox.js"></script> 
+    <script src="../../../js/custom.js"></script> 
+    
+</form>
+
+</body>
+
+</html>

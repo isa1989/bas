@@ -1,0 +1,245 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_MasterHead"><link rel="shortcut icon" href="../../../favicon.ico" />
+<meta charset="utf-8" /><link rel="shortcut icon" href="../../../img/logo.png" /><meta name="author" content="Nasir@MHM" /><meta name="robots" content="index, follow" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="stylesheet" href="../../../css/bootstrap.min.css" /><link rel="stylesheet" href="../../../css/icomoon-social.css" /><link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800" rel="stylesheet" type="text/css" />
+
+    
+    <!--START CSS--> 
+    <link rel="stylesheet" href="../../../css/leaflet.css" /><link rel="stylesheet" href="../../../css/main.css" />
+    
+
+    <!--[if lt IE 9]>  
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
+    <![endif]-->  
+    
+<meta name="description" content="Arzumuz insanımızın həyatını yaxşılaşdıran elmi tədqiqatlarla və istehsalatla məşğul olan şirkət yaratmaq idi. ITL şirkətini yaratdıq. Əsas işimiz kompüter yığmaq, onu tənzim etmək, proqram təchizatı ilə təmin edib müştəriyə yararlı bir alət kimi təqdim etmək idi. Bunu bacarıqla yerinə yetirirdik. Dövlət banklarında informasiyanı o vaxtın printerlərində çap etmək 6 və bəzən 8 saat vaxt aparıdı. Bu da insanların axşam saat 11-12 yə qədər qalıb məlumatları çap edib bitirmək məcburiyyətində saxlayırdı." /><meta name="keywords" content="" /><meta name="description" content="" /><meta name="keywords" content="" /><title>
+	ZUVAND
+</title></head>
+
+
+<body>
+
+<div class="all-site">
+
+<div id="fb-root"></div>
+
+<script>(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=644924598860420";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+<script>!function (d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+    if (!d.getElementById(id))
+    { js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); }
+}
+(document, "script", "twitter-wjs");
+</script>
+
+
+<form name="aspnetForm" method="post" action="index.html" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMjMzNzMwOTczD2QWAmYPZBYCAgMPZBYkAgYPFgIeBFRleHQFpAE8dWwgY2xhc3M9ImxhbmciPjxsaT48YSBjbGFzcz0iYWN0aXZlIiBocmVmPSIvYXovcGFnZXMvMS8iPmF6PC9hPjwvbGk+PGxpPjxhIGNsYXNzPSIiIGhyZWY9Ii9ydS9wYWdlcy8xLyI+cnU8L2E+PC9saT48bGk+PGEgY2xhc3M9IiIgaHJlZj0iL2VuL3BhZ2VzLzEvIj5lbjwvYT48L2xpPmQCBw9kFgQCAQ8WAh8ABQxIYXFxxLFtxLF6ZGFkAgMPFgIfAAWNEzxwPkFyenVtdXogaW5zYW7EsW3EsXrEsW4gaMmZeWF0xLFuxLEgeWF4xZ/EsWxhxZ9kxLFyYW4gZWxtaSB0yZlkcWlxYXRsYXJsYSB2yZkgaXN0ZWhzYWxhdGxhIG3JmcWfxJ91bCBvbGFuIMWfaXJryZl0IHlhcmF0bWFxIGlkaS4gSVRMIMWfaXJryZl0aW5pIHlhcmF0ZMSxcS4gxo9zYXMgacWfaW1peiBrb21wJnV1bWw7dGVyIHnEscSfbWFxLCBvbnUgdMmZbnppbSBldG3JmWssIHByb3FyYW0gdMmZY2hpemF0xLEgaWzJmSB0yZltaW4gZWRpYiBtJnV1bWw7xZ90yZlyaXnJmSB5YXJhcmzEsSBiaXIgYWzJmXQga2ltaSB0yZlxZGltIGV0bcmZayBpZGkuIEJ1bnUgYmFjYXLEsXFsYSB5ZXJpbsmZIHlldGlyaXJkaWsuIEQmb3VtbDt2bMmZdCBiYW5rbGFyxLFuZGEgaW5mb3JtYXNpeWFuxLEgbyB2YXh0xLFuIHByaW50ZXJsyZlyaW5kyZkgJmNjZWRpbDthcCBldG3JmWsgNiB2yZkgYsmZesmZbiA4IHNhYXQgdmF4dCBhcGFyxLFkxLEuIEJ1IGRhIGluc2FubGFyxLFuIGF4xZ9hbSBzYWF0IDExLTEyIHnJmSBxyZlkyZlyIHFhbMSxYiBtyZlsdW1hdGxhcsSxICZjY2VkaWw7YXAgZWRpYiBiaXRpcm3JmWsgbcmZY2J1cml5ecmZdGluZMmZIHNheGxhecSxcmTEsS4gQml6IElCTS0zNjAgYiZvdW1sO3kmdXVtbDtrIEVsZWt0cm9uIEhlc2FibGFtYSBNYcWfxLFubGFyxLFuxLFuICZjY2VkaWw7b3ggcyZ1dW1sO3LJmXRsaSAmY2NlZGlsO2FwIHF1csSfdXN1bnUsIGlzdGVoc2FsIGV0ZGl5aW1peiB4JnV1bWw7c3VzaSBhZGFwdGVyIHZhc2l0yZlzaSBpbMmZIGtvbXAmdXVtbDt0ZXLJmSBxb8WfZHVxIHbJmSBidSBzaXN0ZW1pIGnFn2zJmWTJmSBiaWzJmW4gcHJvcXJhbSB0yZljaGl6YXTEsSAoRFJJVkVSKSB5YXJhdGTEsXEuIEJ1IHMmdXVtbDtyyZl0bGkgJmNjZWRpbDthcCBzaXN0ZW1pbmkgaMmZbWluIGJhbmtsYXJhLCBpc3Rpc21hcmEgdmVyZGlrLiDEsHN0aWZhZMmZJmNjZWRpbDtpbMmZcmluIHNldmluY2luaW4gaMmZZGRpLWgmdXVtbDtkdWR1IHlveCBpZGksICZjY2VkaWw7JnV1bWw7bmtpIG9ubGFyIGluZGkgbcmZbHVtYXRsYXLEsSAmY2NlZGlsO2FwIGV0bcmZecmZIG1ha3NpbXVtIHlhcsSxbSBzYWF0IHZheHQgc8mZcmYgZWRpcmRpbMmZci4gQnUgZCZvdW1sO3bJmXQgYmFua2xhcsSxIGluZGlraSBLYXBpdGFsIEJhbmsgdsmZIG9udW4gxZ8mb3VtbDtiyZlsyZlyaSBpZGkuIEJ1bnVubGEgYsmZcmFiyZlyIG0mdXVtbDt4dMmZbGlmIHByb3FyYW0gdMmZbWluYXRsYXLEsSB5YXJhdG1hcSwgb25sYXLEsSBtJnV1bWw7xZ9hecmZdCBldG3JmWsga29tcCZ1dW1sO3RlciB2yZkgJmNjZWRpbDthcCBxdXLEn3VsYXLEsW7EsW4gdGV4bmlraSBzZXJ2aXMgacWfaW5pIHllcmluyZkgeWV0aXJpcm3JmXnJmSBtJnV1bWw7dsmZZmbJmXEgb2xkdXEuIE0mdXVtbDvFn3TJmXJpbMmZcmltaXogYml6ZMmZbiAmY2NlZGlsO294IG3JmW1udW4gaWRpbMmZci4gMTk5Ny1jaSBpbGTJmW4gVVBTIHF1csSfdWxhcsSxbmluIHNhdMSxxZ/EsSwgcXVyYcWfZMSxcsSxbG1hc8SxIHbJmSBzZXJ2aXNpIGnFn2luyZkgYmHFn2xhZMSxcS4gU2VydmlzIGnFn2luaSB5ZW5pIHlhcmF0ZMSxxJ/EsW3EsXogxLBUUyDFn2lya8mZdGluyZkgaMmZdmFsyZkgZXRkaWsuIEJpeiBUJnV1bWw7cmtpecmZbmluIMSwTkZPUk0gdsmZIEZyYW5zYW7EsW4gU09DT01FQyBmaXJtYWxhcsSxbsSxbiBVUFMgcXVyxJ91bGFyxLFuxLFuIHTJmW1pcmluaSBzJnV1bWw7csmZdGzJmSBtyZluaW1zyZl5aWIgYnUgcXVyxJ91bGFyxLFuIHNlcnZpc2luaSBtJnV1bWw7dsmZZmbJmXFpecmZdGzJmSB5ZXJpbsmZIHlldGlybcmZecmZIGJhxZ9sYWTEsXEuIFRleG5pa2kgaW1rYW5sYXLEsW3EsXrEsSBnZW5pxZ9syZluZGlybcmZaywgbSZ1dW1sO8WfdMmZcmlsyZlyyZkgZGFoYSBldGlhcmzEsSB0ZXhuaWthIHTJmXFkaW0gZXRtyZlrIG3JmXFzyZlkaSBpbMmZIE1BS0VMU0FOLCBTb2NvbWVjIGZpcm1hbGFyxLFuxLEgdMmZcmNpecmZIGV0ZGlrIHbJmSB5ZW5pICZxdW90O1pVVkFORCZxdW90OyDFn2lya8mZdGluaSB5YXJhdGTEsXEuIEJ1IMWfaXJryZl0bMmZIG0mdXVtbDvFn3TJmXJpbMmZcmltaXrJmSBVUFMtbMmZcmzJmSBiyZlyYWLJmXIgRmx1a2UgZmlybWFzxLFuxLFuIGTJmXFpcSAmb3VtbDtsJmNjZWRpbDsmdXVtbDsgY2loYXpsYXLEsW7EsSwgQVjEsFMgZmlybWFzxLFuxLFuIMSwUCBrYW1lcmFsYXLEsW7EsSB2yZkgYmlyICZjY2VkaWw7b3ggYmHFn3FhIGcmb3VtbDtya8mZbWxpIHRleG5pa2FsYXLEsSB0yZlxZGltIGVkyZljyZl5aWsuIEjJmWTJmWZpbWl6IGHEn8SxbGzEsSBldiwgb2ZpcyBpbsWfYSBldG3JmWssICZvdW1sO3ogbcmZaHN1bHVtdXp1IGlzdGVoc2FsIGV0bcmZayB2yZkgeWVuaSB0ZXhub2xvZ2l5YSB5YXJhdG1hcWRyLiBBbGxhaCB5YXJkxLFtJmNjZWRpbDvEsW3EsXogb2xzdW4sIMSwTsWeQUxMQUguLjwvcD4NCmQCDQ8WAh8ABQfGj2xhccmZZAIODxYCHwAFBsOcbnZhbmQCDw8WAh8ABTZCYWvEsSDFn8mZaMmZcmksIE5vYmVsIHByb3NwZWt0aSAtIDIzLCA3LWNpIG3JmXJ0yZliyZlkAhAPFgIfAAUHVGVsZWZvbmQCEQ8WAh8ABRErOTk0IDUwIDIyMCA4MCA2MWQCEg8WAh8ABQZlLW1haWxkAhMPFgIfAAVJenV2YW5kQG1haWwucnUNCiAgc2VydmljZS56dXZhbmRAZ21haWwuY29tDQogICAgICAgICAgICAgICBpbmZvQHp1dmFuZC5hemQCFA8WAh8ABRBCaXpkyZluIHNvcnXFn3VuZAIVDxYCHwAFC8SwxZ8gdmF4dMSxZAIWDxYCHwAFESs5OTQgMTIgNTk4IDg1IDE3ZAIXDxYCHwAFFMSwxZ8gdmF4dMSxIHNvbnJhc8SxZAIYDxYCHwAFESs5OTQgNTAgMjIwIDgwIDYxZAIZDxYCHwAFESs5OTQgNTAgNTY5IDUxIDg4ZAIaDxYCHwAFESs5OTQgNTAgNzQ0IDc0IDE0ZAIbDxYCHwAFCnp1dmFuZC5jb21kAhwPFgIfAAUbQsO8dMO8biBow7xxdXFsYXLEsSBxb3J1bnVyZGSiXM8qS1DD6+SmGXo60RrdgY0rFm0bch/vbacCZist+Q==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="315CBD8D" />
+
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        
+
+        <!-- Navigation & Logo-->
+        <div class="mainmenu-wrapper">
+	        <div class="container">
+
+		        <nav id="mainmenu" class="mainmenu">
+					<ul>
+						<li class="logo-wrapper"><a href="../../../index.html"><img src="../../../Pics/logo.png" alt="Zuvand"></a></li>                                               
+
+						<li id="mhome"><a href="../../../index.html"> ƏSAS SƏHİFƏ </a></li>
+						<li id="mproducts"><a href="../../product/list/index.html">MƏHSULLAR  </a></li>
+						<li id="mservices"><a href="../2/services.html"> XİDMƏTLƏR </a></li>
+						<li id="mdownloads"><a href="../../downloads/1/index.html">YÜKLƏNMƏLƏR </a></li>
+                        <li id="mabout"><a href="about.html">HAQQIMIZDA </a></li>
+                        <li id="mcontact"><a href="../../contact/index.html">ƏLAQƏ </a></li>
+
+					</ul>
+				</nav>
+
+                
+                <ul class="lang"><li><a class="active" href="index.html">az</a></li><li><a class="" href="../../../ru/pages/1/index.html">ru</a></li><li><a class="" href="../../../en/pages/1/index.html">en</a></li>
+                 
+
+			</div>
+		</div>
+        
+        
+
+    <script> window.onload = function () { $('#mabout').addClass('active'); }  </script>
+
+           <div class="section">
+               <div class="container">
+
+                   <article>
+                          <div class="blog-post blog-single-post">
+							        <div class="single-post-title">
+								        <h3>Haqqımızda</h3>
+							        </div>
+                                   <div>
+
+							            <div class="single-post-content">
+
+                                            <p>Arzumuz insanımızın həyatını yaxşılaşdıran elmi tədqiqatlarla və istehsalatla məşğul olan şirkət yaratmaq idi. ITL şirkətini yaratdıq. Əsas işimiz komp&uuml;ter yığmaq, onu tənzim etmək, proqram təchizatı ilə təmin edib m&uuml;ştəriyə yararlı bir alət kimi təqdim etmək idi. Bunu bacarıqla yerinə yetirirdik. D&ouml;vlət banklarında informasiyanı o vaxtın printerlərində &ccedil;ap etmək 6 və bəzən 8 saat vaxt aparıdı. Bu da insanların axşam saat 11-12 yə qədər qalıb məlumatları &ccedil;ap edib bitirmək məcburiyyətində saxlayırdı. Biz IBM-360 b&ouml;y&uuml;k Elektron Hesablama Maşınlarının &ccedil;ox s&uuml;rətli &ccedil;ap qurğusunu, istehsal etdiyimiz x&uuml;susi adapter vasitəsi ilə komp&uuml;terə qoşduq və bu sistemi işlədə bilən proqram təchizatı (DRIVER) yaratdıq. Bu s&uuml;rətli &ccedil;ap sistemini həmin banklara, istismara verdik. İstifadə&ccedil;ilərin sevincinin həddi-h&uuml;dudu yox idi, &ccedil;&uuml;nki onlar indi məlumatları &ccedil;ap etməyə maksimum yarım saat vaxt sərf edirdilər. Bu d&ouml;vət bankları indiki Kapital Bank və onun ş&ouml;bələri idi. Bununla bərabər m&uuml;xtəlif proqram təminatları yaratmaq, onları m&uuml;şayət etmək komp&uuml;ter və &ccedil;ap qurğularının texniki servis işini yerinə yetirirməyə m&uuml;vəffəq olduq. M&uuml;ştərilərimiz bizdən &ccedil;ox məmnun idilər. 1997-ci ildən UPS qurğularınin satışı, quraşdırılması və servisi işinə başladıq. Servis işini yeni yaratdığımız İTS şirkətinə həvalə etdik. Biz T&uuml;rkiyənin İNFORM və Fransanın SOCOMEC firmalarının UPS qurğularının təmirini s&uuml;rətlə mənimsəyib bu qurğuların servisini m&uuml;vəffəqiyətlə yerinə yetirməyə başladıq. Texniki imkanlarımızı genişləndirmək, m&uuml;ştərilərə daha etiarlı texnika təqdim etmək məqsədi ilə MAKELSAN, Socomec firmalarını tərciyə etdik və yeni &quot;ZUVAND&quot; şirkətini yaratdıq. Bu şirkətlə m&uuml;ştərilərimizə UPS-lərlə bərabər Fluke firmasının dəqiq &ouml;l&ccedil;&uuml; cihazlarını, AXİS firmasının İP kameralarını və bir &ccedil;ox başqa g&ouml;rkəmli texnikaları təqdim edəcəyik. Hədəfimiz ağıllı ev, ofis inşa etmək, &ouml;z məhsulumuzu istehsal etmək və yeni texnologiya yaratmaqdr. Allah yardım&ccedil;ımız olsun, İNŞALLAH..</p>
+
+                                            <div style="clear:both"></div>
+
+							            </div>     
+                                       
+
+                                            <div class="soc-items clearfix">
+
+                                                <div class="share"><div class="fb-share-button"  data-type="button_count"></div></div>
+
+                                                <div class="share"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en">Tweet</a></div>
+
+                                                <div class="share" >
+                                                    <!-- Place this tag in your head or just before your close body tag. -->
+                                                    <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+                                                    <!-- Place this tag where you want the +1 button to render. -->
+                                                    <div class="g-plusone" data-size="medium"  ></div>
+
+                                                </div>
+
+                                            </div>                                                                          
+                                  </div>
+				          </div>
+                   </article>
+
+
+
+               </div>
+           </div>
+
+
+
+
+
+
+	    <!-- Footer -->
+	    <div class="footer">
+
+
+        
+        <div class="fast-contact">Bizə yazın</div>		
+
+        <div class="main-contact-form">                                       
+
+                <span class="contact-close">X</span>
+                <div class="contact-form-wrapper">
+		            <div class="form-horizontal" role="form">                                                
+
+				        <div class="form-group">
+					        <label for="contact-name" class="col-sm-3 control-label"><b>Ad,Soyad</b></label>
+					        <div class="col-sm-9">
+						        <input class="form-control" id="contact-name" type="text" placeholder="">
+					        </div>
+				        </div>                        
+
+				        <div class="form-group">
+					        <label for="contact-email" class="col-sm-3 control-label"><b>E-mail</b></label>
+					        <div class="col-sm-9">
+						        <input class="form-control" id="contact-email" type="text" placeholder="">
+					        </div>
+				        </div>
+
+				        <div class="form-group">
+					        <label for="contact-message" class="col-sm-3 control-label"><b>Mətn</b></label>
+					        <div class="col-sm-9">
+						        <textarea class="form-control" rows="5" id="contact-message"></textarea>
+					        </div>
+				        </div>
+				        <div class="form-group">
+                            <label class="col-sm-6 control-label cformRes" style="text-align:right"></label>
+					        <div class="col-sm-6">
+						        <button type="submit" class="btn pull-right">Göndər</button>
+					        </div>
+				        </div>
+		            </div>
+		         </div>
+         </div>
+
+
+	    	<div class="container">
+		    	<div class="row">
+		    		
+		    		<div class="col-footer col-md-4 col-xs-6">
+		    			<h3>Əlaqə</h3>
+		    			<p class="contact-us-details">
+	        				<b>Ünvan:</b> Bakı şəhəri, Nobel prospekti - 23, 7-ci mərtəbə <br/>
+	        				<b>Telefon:</b> +994 50 220 80 61<br/>	        				
+	        				<b>e-mail:</b>  zuvand@mail.ru
+  service.zuvand@gmail.com
+               info@zuvand.az
+	        			</p>
+		    		</div>
+		    		<div class="col-footer support-footer col-md-2 col-xs-6">
+		    			<h2>Bizdən soruşun</h2>
+                        <span class="work-time"></span>
+                        <div class="sup-fot-item">          
+                            <span class="sfi-left"> İş vaxtı : </span>
+                            <span class="sfi-right"> +994 12 598 85 17 </span>
+                        </div>
+                          
+                        <div class="sup-fot-item">
+                            <span class="sfi-left"> İş vaxtı sonrası  :</span>
+                            <span class="sfi-right"> 
+                                +994 50 220 80 61  <br/>
+		                        +994 50 569 51 88 <br/>
+			                    +994 50 744 74 14 <br/>
+                            </span>
+                        </div>
+                                                   
+		    		</div>
+		    	</div>
+		    	<div class="row">
+		    		<div class="col-md-12">
+		    			<div class="footer-copyright"> © 2016 zuvand.com  |  Bütün hüquqları qorunur </div>
+		    		</div>
+		    	</div>
+		    </div>
+	    </div>
+
+
+        <!-- Javascripts -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../../../js/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+        <script src="../../../js/jquery.fitvids.js"></script>
+        <script src="../../../js/jquery.sequence-min.js"></script>
+        <script src="../../../js/jquery.bxslider.js"></script>
+        <script src="../../../js/main-menu.js"></script>
+        <script src="../../../js/template.js"></script>        
+    
+    
+        <script>
+            var lang = "az";
+        </script>
+        
+    <script src="../../../frontend/fancybox/jquery.fancybox.js"></script> 
+    <script src="../../../js/custom.js"></script> 
+    
+</form>
+
+</body>
+
+</html>
